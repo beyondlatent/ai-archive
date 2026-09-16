@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Archive — 관심 있는 리포트와 글 모음</title>
+<meta name="description" content="AI 관련 보고서, 기사, 블로그 글을 원문 링크와 함께 한국어로 요약해 모아둔 아카이브.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>AI Archive</a>
+    <span class="topbar-spacer"></span>
+    <a class="topbar-link" href="https://github.com/beyondlatent/ai-archive" target="_blank" rel="noopener">GitHub</a>
+    <button class="icon-btn" id="theme-toggle" type="button" aria-label="테마 전환">☾</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>AI Archive</h1>
+    <p>관심 있게 읽은 보고서와 기사, 블로그 글을 원문 링크와 함께 한국어로 정리해 둡니다. 원문을 다시 찾지 않아도 핵심을 되짚을 수 있게, 조사 방법과 수치와 한계까지 같이 적습니다.</p>
+    <div class="hero-stats">
+      <span class="pill">글 <strong id="doc-count">3</strong>편</span>
+      <span class="pill">기관 <strong>MIT · BCG · McKinsey · PwC · Gartner</strong></span>
+      <span class="pill">기간 <strong>2025 ~ 2026</strong></span>
+    </div>
+  </div>
+</section>
+
+<main class="wrap">
+
+  <div class="toolbar">
+    <div class="search-box">
+      <label class="visually-hidden" for="search">검색</label>
+      <input type="search" id="search" placeholder="제목, 기관, 키워드로 검색" autocomplete="off">
+    </div>
+    <div class="filters" role="group" aria-label="주제 필터">
+      <span class="filter-label">필터</span>
+      <button class="chip" type="button" data-filter="all" aria-pressed="true">전체</button>
+      <button class="chip" type="button" data-filter="보고서" aria-pressed="false">보고서</button>
+      <button class="chip" type="button" data-filter="리서치 정리" aria-pressed="false">리서치 정리</button>
+      <button class="chip" type="button" data-filter="ai 도입" aria-pressed="false">AI 도입</button>
+      <button class="chip" type="button" data-filter="roi" aria-pressed="false">ROI</button>
+      <button class="chip" type="button" data-filter="에이전트" aria-pressed="false">에이전트</button>
+      <button class="chip" type="button" data-filter="인력" aria-pressed="false">인력</button>
+    </div>
+    <p style="margin:0;font-size:13px;color:var(--text-faint)"><span id="result-count">3</span>편 표시 중</p>
+  </div>
+
+  <ul class="post-list" id="post-list">
+
+    <li class="post-card"
+        data-tags="보고서|ai 도입|roi|에이전트"
+        data-search="The GenAI Divide State of AI in Business 2025 MIT NANDA Media Lab 제니이아이 디바이드 생성형 AI 파일럿 실패 95% 학습 격차 섀도 AI Challapally Raskar 보고서">
+      <h2><a href="posts/2025-07-mit-nanda-genai-divide.html">The GenAI Divide: State of AI in Business 2025</a></h2>
+      <p class="dek">기업이 생성형 AI에 300~400억 달러를 썼지만 95%는 손익에 잡히는 효과를 얻지 못했다. 원인을 모델 성능이 아니라 '학습 격차'에서 찾은 보고서.</p>
+      <div class="post-meta">
+        <span class="org">MIT Media Lab · Project NANDA</span>
+        <span class="sep">·</span>
+        <time datetime="2025-07">2025년 7월</time>
+        <span class="sep">·</span>
+        <span>Challapally, Pease, Raskar, Chari</span>
+      </div>
+      <div class="tags">
+        <span class="tag tag-type">보고서</span>
+        <span class="tag">AI 도입</span>
+        <span class="tag">ROI</span>
+        <span class="tag">파일럿 실패</span>
+        <span class="tag">에이전트</span>
+      </div>
+    </li>
+
+    <li class="post-card"
+        data-tags="보고서|ai 도입|roi|에이전트|조직 변화"
+        data-search="The Widening AI Value Gap BCG Boston Consulting Group 밸류 갭 가치 격차 future-built scalers laggards 10-20-70 에이전트 TSR EBIT 보고서 Build for the Future">
+      <h2><a href="posts/2025-09-bcg-widening-ai-value-gap.html">The Widening AI Value Gap</a></h2>
+      <p class="dek">전 세계 기업의 5%만 AI로 실질 가치를 만들고 60%는 투자하고도 성과가 없다. 1,250명 임원 조사로 격차가 벌어지는 구조를 분석했다.</p>
+      <div class="post-meta">
+        <span class="org">Boston Consulting Group</span>
+        <span class="sep">·</span>
+        <time datetime="2025-09">2025년 9월</time>
+        <span class="sep">·</span>
+        <span>Apotheker, de Bellefonds, Lukic 외</span>
+      </div>
+      <div class="tags">
+        <span class="tag tag-type">보고서</span>
+        <span class="tag">AI 도입</span>
+        <span class="tag">ROI</span>
+        <span class="tag">에이전트</span>
+        <span class="tag">조직 변화</span>
+      </div>
+    </li>
+
+    <li class="post-card"
+        data-tags="리서치 정리|ai 도입|roi|에이전트|생산성|인력"
+        data-search="맥킨지 McKinsey PwC BCG 가트너 Gartner 기업 AI 도입 현황 리서치 정리 State of AI Global CEO Survey AI at Work Jobs Barometer 하이프 사이클 Hype Cycle 에이전틱 agentic 2025 2026 비교">
+      <h2><a href="posts/2025-2026-enterprise-ai-adoption-research.html">기업 AI 도입 현황 리서치 정리 (2025~2026)</a></h2>
+      <p class="dek">맥킨지, PwC, BCG, 가트너가 2025년 이후 발표한 조사 20여 건을 원문 링크와 함께 정리하고 네 기관의 수치를 나란히 비교했다.</p>
+      <div class="post-meta">
+        <span class="org">McKinsey · PwC · BCG · Gartner</span>
+        <span class="sep">·</span>
+        <time datetime="2026-09">2025년 1월 ~ 2026년 9월</time>
+        <span class="sep">·</span>
+        <span>보고서 20여 건 비교</span>
+      </div>
+      <div class="tags">
+        <span class="tag tag-type">리서치 정리</span>
+        <span class="tag">AI 도입</span>
+        <span class="tag">ROI</span>
+        <span class="tag">에이전트</span>
+        <span class="tag">생산성</span>
+        <span class="tag">인력</span>
+      </div>
+    </li>
+
+  </ul>
+
+  <div class="empty-state" id="empty-state" hidden>조건에 맞는 글이 없습니다.</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    AI Archive — 관심 있는 리포트와 글을 하나씩 정리합니다.
+    <a href="https://github.com/beyondlatent/ai-archive" target="_blank" rel="noopener">저장소 보기</a>
+  </div>
+</footer>
+
+</body>
+</html>

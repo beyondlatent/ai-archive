@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{글 제목}} — 요약 | AI Archive</title>
+<meta name="description" content="{{한 문장 설명}}">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+<script src="../assets/site.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true"></span>AI Archive</a>
+    <span class="topbar-spacer"></span>
+    <a class="topbar-link" href="../index.html">전체 목록</a>
+    <button class="icon-btn" id="theme-toggle" type="button" aria-label="테마 전환">☾</button>
+  </div>
+</header>
+
+<main class="wrap article">
+
+  <nav class="breadcrumb"><a href="../index.html">AI Archive</a> › {{유형}}</nav>
+
+  <div class="article-head">
+    <h1>{{글 제목}}</h1>
+    <p class="dek">{{두세 문장으로 이 글이 무엇을 말하는지}}</p>
+    <div class="tags">
+      <span class="tag tag-type">{{보고서 | 기사 | 블로그}}</span>
+      <span class="tag">{{주제 태그}}</span>
+    </div>
+  </div>
+
+  <section class="meta-card">
+    <dl>
+      <dt>발행 기관</dt><dd>{{기관}}</dd>
+      <dt>발행일</dt><dd>{{YYYY년 M월}}</dd>
+      <dt>저자</dt><dd>{{저자}}</dd>
+      <dt>유형</dt><dd>{{유형}}</dd>
+      <dt>추가일</dt><dd><time datetime="{{YYYY-MM-DD}}">{{YYYY-MM-DD}}</time></dd>
+    </dl>
+  </section>
+
+  <section class="source-box">
+    <h2>원문 링크</h2>
+    <ul>
+      <li><a href="{{URL}}" target="_blank" rel="noopener">{{링크 설명}}</a></li>
+    </ul>
+    <p class="note">{{접근 제한이나 미러 관련 안내가 필요하면 여기에}}</p>
+  </section>
+
+  <nav class="toc">
+    <h2>목차</h2>
+    <ol>
+      <li><a href="#summary">한눈에 보기</a></li>
+      <li><a href="#method">조사 방법</a></li>
+      <li><a href="#numbers">핵심 수치</a></li>
+      <li><a href="#takeaway">시사점</a></li>
+      <li><a href="#caveat">읽을 때 유의할 점</a></li>
+    </ol>
+  </nav>
+
+  <div class="prose">
+
+    <h2 id="summary">한눈에 보기</h2>
+    <p class="lead">{{핵심 주장을 한 문단으로}}</p>
+
+    <h2 id="method">조사 방법</h2>
+    <ul>
+      <li><strong>대상</strong> — {{표본}}</li>
+      <li><strong>범위</strong> — {{국가, 산업}}</li>
+      <li><strong>기간</strong> — {{조사 기간}}</li>
+    </ul>
+
+    <h2 id="numbers">핵심 수치</h2>
+    <div class="stat-grid">
+      <div class="stat"><span class="v">{{값}}</span><span class="k">{{설명}}</span></div>
+    </div>
+
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th scope="col">항목</th><th scope="col" class="num">수치</th></tr></thead>
+      <tbody>
+        <tr><th scope="row" class="t-key">{{항목}}</th><td class="num">{{값}}</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h2 id="body">{{주요 발견 섹션}}</h2>
+    <p>{{내용}}</p>
+
+    <h2 id="takeaway">시사점</h2>
+    <ol>
+      <li><strong>{{요지}}</strong> {{부연}}</li>
+    </ol>
+
+    <div class="callout callout-warn" id="caveat">
+      <div class="callout-title">읽을 때 유의할 점</div>
+      <ul>
+        <li><strong>{{한계}}</strong> {{부연}}</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <section class="related">
+    <h2>함께 보기</h2>
+    <ul>
+      <li><a href="{{파일명}}.html">{{제목}}</a><span>{{기관}} · {{시점}} · {{관계 설명}}</span></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    AI Archive — 관심 있는 리포트와 글을 하나씩 정리합니다.
+    <a href="../index.html">전체 목록으로</a>
+  </div>
+</footer>
+
+</body>
+</html>

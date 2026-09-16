@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The GenAI Divide: State of AI in Business 2025 — 요약 | AI Archive</title>
+<meta name="description" content="MIT Media Lab Project NANDA가 2025년 발표한 보고서 요약. 기업 생성형 AI 투자의 95%가 측정 가능한 손익 효과를 내지 못하는 이유를 '학습 격차'로 설명한다.">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+<script src="../assets/site.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true"></span>AI Archive</a>
+    <span class="topbar-spacer"></span>
+    <a class="topbar-link" href="../index.html">전체 목록</a>
+    <button class="icon-btn" id="theme-toggle" type="button" aria-label="테마 전환">☾</button>
+  </div>
+</header>
+
+<main class="wrap article">
+
+  <nav class="breadcrumb"><a href="../index.html">AI Archive</a> › 보고서</nav>
+
+  <div class="article-head">
+    <h1>The GenAI Divide: State of AI in Business 2025</h1>
+    <p class="dek">기업이 생성형 AI에 300~400억 달러를 썼지만 95%는 손익계산서에 잡히는 효과를 얻지 못했다. MIT Media Lab의 Project NANDA는 그 원인을 모델 성능이 아니라 <strong>학습 격차(learning gap)</strong>에서 찾는다.</p>
+    <div class="tags">
+      <span class="tag tag-type">보고서</span>
+      <span class="tag">AI 도입</span>
+      <span class="tag">ROI</span>
+      <span class="tag">파일럿 실패</span>
+      <span class="tag">에이전트</span>
+    </div>
+  </div>
+
+  <section class="meta-card">
+    <dl>
+      <dt>발행 기관</dt>
+      <dd>MIT Media Lab — Project NANDA (Networked Agents and Decentralized AI)</dd>
+      <dt>발행일</dt>
+      <dd>2025년 7월 (언론 보도 확산 2025년 8월)</dd>
+      <dt>저자</dt>
+      <dd>Aditya Challapally, Chris Pease, Ramesh Raskar, Pradyumna Chari</dd>
+      <dt>유형</dt>
+      <dd>연구 보고서 (프리프린트 · 동료평가 미실시)</dd>
+      <dt>분량</dt>
+      <dd>약 26페이지</dd>
+      <dt>추가일</dt>
+      <dd><time datetime="2026-09-16">2026-09-16</time></dd>
+    </dl>
+  </section>
+
+  <section class="source-box">
+    <h2>원문 링크</h2>
+    <ul>
+      <li><a href="https://nanda.media.mit.edu/" target="_blank" rel="noopener">Project NANDA 공식 사이트 (MIT Media Lab)</a></li>
+      <li><a href="https://www.artificialintelligence-news.com/wp-content/uploads/2025/08/ai_report_2025.pdf" target="_blank" rel="noopener">보고서 PDF 전문 (미러 1)</a></li>
+      <li><a href="https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf" target="_blank" rel="noopener">보고서 PDF 전문 (미러 2)</a></li>
+      <li><a href="https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/" target="_blank" rel="noopener">Fortune — 보고서 최초 보도 (2025-08-18)</a></li>
+    </ul>
+    <p class="note">MIT는 보고서 확산 이후 공개 배포를 제한했다. 원본 경로가 열리지 않으면 위 미러 PDF를 참고하면 된다.</p>
+  </section>
+
+  <nav class="toc">
+    <h2>목차</h2>
+    <ol>
+      <li><a href="#summary">한눈에 보기</a></li>
+      <li><a href="#method">조사 방법</a></li>
+      <li><a href="#numbers">핵심 수치</a></li>
+      <li><a href="#divide">1. 디바이드의 실체: 도입률은 높고 전환은 없다</a></li>
+      <li><a href="#learning">2. 진짜 병목은 '학습 격차'</a></li>
+      <li><a href="#shadow">3. 섀도 AI 경제</a></li>
+      <li><a href="#buildbuy">4. 자체 개발보다 구매·제휴가 두 배 성공한다</a></li>
+      <li><a href="#budget">5. 예산은 앞단에, ROI는 뒷단에</a></li>
+      <li><a href="#workforce">6. 인력 영향: 해고가 아니라 채용 동결</a></li>
+      <li><a href="#cross">7. 디바이드를 건넌 5%의 공통점</a></li>
+      <li><a href="#agentic">8. 다음 국면: 에이전틱 웹</a></li>
+      <li><a href="#takeaway">시사점</a></li>
+      <li><a href="#caveat">읽을 때 유의할 점</a></li>
+    </ol>
+  </nav>
+
+  <div class="prose">
+
+    <h2 id="summary">한눈에 보기</h2>
+    <p class="lead">생성형 AI 도입률은 사실상 포화 상태지만, 조직의 손익에 잡히는 성과는 거의 없다. 보고서는 이 간극을 'GenAI 디바이드'라 부르고, 전체 기업의 5%만이 이 선을 넘었다고 본다. 넘지 못한 쪽과 넘은 쪽을 가르는 것은 모델의 성능도, 인재도, 규제도 아니다. 배포한 시스템이 <strong>업무 맥락을 기억하고 피드백으로 개선되는가</strong>의 차이다.</p>
+
+    <h2 id="method">조사 방법</h2>
+    <p>2025년 1월부터 6월까지 세 갈래로 수행된 혼합 연구다.</p>
+    <ul>
+      <li><strong>공개 사례 리뷰</strong> — 공식 발표된 기업 AI 이니셔티브 300건 이상을 체계적으로 분석했다.</li>
+      <li><strong>구조화 인터뷰</strong> — 여러 산업의 조직 담당자를 대상으로 52건의 심층 인터뷰를 진행했다.</li>
+      <li><strong>설문</strong> — 주요 컨퍼런스 4곳에서 시니어 리더 153명의 응답을 받았다.</li>
+    </ul>
+    <p>언론 인용 과정에서 "리더 150명 인터뷰, 직원 350명 설문"이라는 다른 표기도 함께 돌았다. 보고서 본문이 명시한 값은 위의 52건과 153건이다.</p>
+
+    <h2 id="numbers">핵심 수치</h2>
+    <div class="stat-grid">
+      <div class="stat"><span class="v">95%</span><span class="k">측정 가능한 손익 효과를 얻지 못한 조직 비율</span></div>
+      <div class="stat"><span class="v">5%</span><span class="k">파일럿에서 실질 가치를 뽑아낸 조직 비율</span></div>
+      <div class="stat"><span class="v">$30~40B</span><span class="k">기업 부문 생성형 AI 누적 지출 추정</span></div>
+      <div class="stat"><span class="v">2배</span><span class="k">자체 개발 대비 외부 구매·제휴의 성공률</span></div>
+    </div>
+
+    <div class="table-scroll">
+    <table>
+      <caption class="visually-hidden">도구 유형별 도입 단계 통과율</caption>
+      <thead>
+        <tr><th scope="col">도구 유형</th><th scope="col" class="num">탐색·파일럿</th><th scope="col" class="num">배포</th><th scope="col" class="num">프로덕션 정착</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row" class="t-key">범용 도구 (ChatGPT, Copilot 등)</th><td class="num">80% 이상</td><td class="num">약 40%</td><td class="num">—</td></tr>
+        <tr><th scope="row" class="t-key">엔터프라이즈 맞춤 시스템</th><td class="num">평가 60% → 파일럿 20%</td><td class="num">—</td><td class="num">5%</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>같은 회사 안에서도 범용 챗봇은 잘 퍼지는데 업무에 박아 넣은 맞춤 시스템은 프로덕션까지 가지 못한다. 보고서가 말하는 디바이드는 이 두 줄의 간격이다.</p>
+
+    <h2 id="divide">1. 디바이드의 실체: 도입률은 높고 전환은 없다</h2>
+    <p>보고서는 현재 상태를 "높은 도입, 낮은 전환(high adoption, low transformation)"으로 요약한다. 범용 도구는 개인의 생산성을 올리지만 그 효과가 부서의 원가나 매출로 집계되지 않는다. 개인이 문서 초안을 빨리 쓰는 것과 조직이 인건비를 줄이거나 매출을 늘리는 것은 다른 층위의 사건인데, 대부분의 도입은 앞쪽에서 멈춰 있다.</p>
+    <p>조사 대상 9개 산업 가운데 구조적 변화의 징후가 뚜렷한 곳은 2개뿐이었다. 나머지 7개 산업은 "전환 없는 광범위한 실험" 상태로 분류됐다.</p>
+
+    <h2 id="learning">2. 진짜 병목은 '학습 격차'</h2>
+    <p>보고서의 중심 주장이다. 확장을 가로막는 것은 인프라도 규제도 인재도 아니라 <strong>학습</strong>이다. 현재 대부분의 생성형 AI 시스템은 다음 세 가지를 하지 못한다.</p>
+    <ul>
+      <li><strong>피드백을 보존하지 못한다.</strong> 사용자가 매번 같은 방식으로 고쳐줘도 다음 세션에서 같은 실수를 반복한다.</li>
+      <li><strong>맥락에 적응하지 못한다.</strong> 회사 고유의 규칙, 예외 처리, 승인 체계를 학습해 내재화하지 못한다.</li>
+      <li><strong>시간이 지나도 나아지지 않는다.</strong> 도입 첫날의 성능이 6개월 뒤에도 그대로다.</li>
+    </ul>
+    <p>사람이 하는 업무는 반복될수록 숙련되지만 배포된 AI는 그렇지 않다. 그래서 파일럿에서는 인상적이었던 시스템이 실제 업무 흐름에 들어가면 관리 비용이 절감 효과를 넘어서게 된다.</p>
+
+    <h2 id="shadow">3. 섀도 AI 경제</h2>
+    <p>공식 도입과 실제 사용 사이의 격차도 크다.</p>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th scope="col">구분</th><th scope="col" class="num">비율</th></tr></thead>
+      <tbody>
+        <tr><th scope="row" class="t-key">공식 LLM 구독을 구매한 기업</th><td class="num">40%</td></tr>
+        <tr><th scope="row" class="t-key">직원이 개인 AI 도구를 업무에 상시 사용하는 기업</th><td class="num">90% 이상</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>회사가 돈을 쓰지 않은 곳에서 실제 업무가 돌아가고 있다는 뜻이다. 이 '섀도 AI 경제'는 두 가지를 동시에 시사한다. 하나는 직원 수요가 이미 충분히 검증됐다는 것, 다른 하나는 회사가 그 사용 실태를 측정하지도 통제하지도 못하고 있다는 것이다. 보고서는 공식 파일럿의 실패율과 개인 도구의 정착률이 이렇게 갈리는 이유 자체가 진단의 출발점이라고 본다.</p>
+
+    <h2 id="buildbuy">4. 자체 개발보다 구매·제휴가 두 배 성공한다</h2>
+    <p>조직은 내부 구축을 선호하지만 결과는 반대로 나왔다. 외부 벤더와 제휴하거나 솔루션을 구매한 경우의 성공률이 내부 자체 개발의 약 두 배였다. 자체 개발 프로젝트는 대개 파일럿 단계에서 멈췄다.</p>
+    <p>다만 보고서는 "사서 쓰면 된다"고 말하지 않는다. 성공한 구매 사례의 공통점은 벤더를 고르고 끝내는 게 아니라, 자사 업무 흐름에 맞춰 깊이 커스터마이즈할 수 있는 파트너를 골랐다는 데 있었다.</p>
+
+    <h2 id="budget">5. 예산은 앞단에, ROI는 뒷단에</h2>
+    <p>예산 배분과 실제 수익률이 어긋나 있다는 것이 보고서의 가장 실무적인 지적이다.</p>
+    <ul>
+      <li>영업·마케팅 부문이 전체 AI 예산의 <strong>50~70%</strong>를 가져간다. 성과가 눈에 잘 띄고 스토리를 만들기 쉽기 때문이다.</li>
+      <li>정작 측정 가능한 수익률은 <strong>백오피스 자동화</strong>에서 더 크게 나왔다. 외주 인력 대체, 문서·서류 처리, 대행사 비용 절감처럼 절감액이 명확히 계산되는 영역이다.</li>
+      <li>백오피스의 성과는 홍보 가치가 낮고 측정 체계가 없어 경영진의 시야에서 빠진다.</li>
+    </ul>
+
+    <h2 id="workforce">6. 인력 영향: 해고가 아니라 채용 동결</h2>
+    <p>대규모 감원은 관측되지 않았다. 변화는 채용 쪽에서 조용히 일어나고 있었다.</p>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th scope="col">영역</th><th scope="col">관측된 변화</th></tr></thead>
+      <tbody>
+        <tr><th scope="row" class="t-key">고객 지원 · 행정 처리 · 표준화된 개발 업무</th><td>인력 5~20% 축소</td></tr>
+        <tr><th scope="row" class="t-key">기술 · 미디어 산업</th><td>리더의 80% 이상이 2년 내 채용 규모 축소를 예상</td></tr>
+        <tr><th scope="row" class="t-key">헬스케어 · 에너지 · 중공업</th><td>향후 5년간 채용 축소 계획 없음</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>즉 일자리가 사라지는 방식은 해고 공지가 아니라 빈자리를 채우지 않는 것이다. 영향은 전 산업에 균일하지 않고, 이미 생성형 AI로 직접 타격을 받은 산업에 집중돼 있다.</p>
+
+    <h2 id="cross">7. 디바이드를 건넌 5%의 공통점</h2>
+    <ul>
+      <li><strong>업무 하나를 끝까지 판다.</strong> 전사 플랫폼을 깔지 않고 특정 워크플로 하나를 골라 완결시킨다.</li>
+      <li><strong>중앙 AI 조직이 아니라 현업이 주도한다.</strong> 실제 그 업무를 아는 라인 매니저가 도입을 이끈 경우의 성공률이 높았다.</li>
+      <li><strong>벤더를 깊이 붙여 쓴다.</strong> 기성품을 그대로 쓰지 않고 자사 프로세스에 맞게 개조한다.</li>
+      <li><strong>90일 안에 성과를 검증한다.</strong> 무기한 파일럿을 허용하지 않고 짧은 기한 안에 손익 효과를 확인한다.</li>
+      <li><strong>뒷단부터 손댄다.</strong> 눈에 띄는 고객 접점보다 절감액이 계산되는 내부 프로세스를 먼저 자동화한다.</li>
+    </ul>
+
+    <h2 id="agentic">8. 다음 국면: 에이전틱 웹</h2>
+    <p>보고서는 해법의 방향을 기억과 학습 능력을 갖춘 에이전트 인프라에서 찾는다. NANDA 프로젝트 자체가 분산 환경에서 에이전트들이 서로를 발견하고 협업하기 위한 프로토콜 연구이며, 보고서는 MCP(Model Context Protocol) 같은 표준과 메모리 프레임워크가 앞으로 어떤 벤더가 고객을 디바이드 너머로 데려갈지 가를 것이라고 전망한다.</p>
+    <p>발행 주체가 곧 이 인프라를 연구하는 조직이라는 점은 감안하고 읽을 필요가 있다.</p>
+
+    <h2 id="takeaway">시사점</h2>
+    <ol>
+      <li><strong>도입률은 더 이상 지표가 아니다.</strong> 몇 명이 쓰는지가 아니라 어떤 업무의 원가가 얼마나 줄었는지를 물어야 한다.</li>
+      <li><strong>기억하지 못하는 시스템은 확장되지 않는다.</strong> 도구를 고를 때 성능 벤치마크보다 피드백 반영 구조와 맥락 유지 방식을 먼저 확인해야 한다.</li>
+      <li><strong>예산을 뒷단으로 옮길 여지가 있다.</strong> 홍보가 되는 곳과 돈이 되는 곳이 다르다.</li>
+      <li><strong>자체 개발 편향을 점검해야 한다.</strong> 내부 구축이 통제감은 주지만 성공률은 절반이었다.</li>
+      <li><strong>섀도 사용을 먼저 측정하라.</strong> 직원이 이미 개인 계정으로 해결하고 있는 업무가 가장 유력한 공식 도입 후보다.</li>
+    </ol>
+
+    <div class="callout callout-warn" id="caveat">
+      <div class="callout-title">읽을 때 유의할 점</div>
+      <ul>
+        <li><strong>표본이 작다.</strong> 인터뷰 52건, 설문 153건으로 전 세계 기업을 일반화하기에는 한계가 있다.</li>
+        <li><strong>동료평가를 거치지 않았다.</strong> MIT 이름으로 유통됐지만 학술 논문이 아니라 프로젝트 팀의 보고서다.</li>
+        <li><strong>'95% 실패'의 정의가 느슨하다.</strong> 손익계산서에 잡히는 효과를 기준으로 삼았기 때문에, 측정 체계가 없어 집계되지 않은 성과까지 실패로 분류됐을 수 있다. 발표 직후 이 수치의 타당성을 두고 반박이 여러 건 나왔다.</li>
+        <li><strong>발행 주체의 이해관계가 있다.</strong> 결론이 가리키는 방향(에이전트 프로토콜·메모리 인프라)이 NANDA의 연구 주제와 일치한다.</li>
+        <li><strong>원문 접근이 제한됐다.</strong> 공개 이후 배포가 중단돼 현재는 미러 사본으로 유통된다.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <section class="related">
+    <h2>함께 보기</h2>
+    <ul>
+      <li><a href="2025-09-bcg-widening-ai-value-gap.html">The Widening AI Value Gap</a><span>BCG · 2025년 9월 · 같은 현상을 1,250명 임원 조사로 검증한 보고서</span></li>
+      <li><a href="2025-2026-enterprise-ai-adoption-research.html">맥킨지 · PwC · BCG · 가트너 기업 AI 도입 리서치 정리 (2025~2026)</a><span>리서치 4사 · 95%라는 숫자가 다른 조사에서 어떻게 나타나는지 비교</span></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    AI Archive — 관심 있는 리포트와 글을 하나씩 정리합니다.
+    <a href="../index.html">전체 목록으로</a>
+  </div>
+</footer>
+
+</body>
+</html>
