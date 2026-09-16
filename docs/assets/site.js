@@ -30,9 +30,10 @@
 
   /* ---------- 목록 검색 / 필터 ---------- */
   function initList() {
-    var list = document.getElementById("post-list");
-    if (!list) return;
-    var cards = Array.prototype.slice.call(list.querySelectorAll(".post-card"));
+    var root = document.getElementById("post-groups");
+    if (!root) return;
+    var groups = Array.prototype.slice.call(root.querySelectorAll(".layer-group"));
+    var cards = Array.prototype.slice.call(root.querySelectorAll(".post-card"));
     var search = document.getElementById("search");
     var chips = Array.prototype.slice.call(document.querySelectorAll(".chip[data-filter]"));
     var empty = document.getElementById("empty-state");
@@ -50,6 +51,15 @@
         var ok = matchQ && matchF;
         card.hidden = !ok;
         if (ok) shown++;
+      });
+      // 비어 버린 구역은 제목까지 함께 숨긴다
+      groups.forEach(function (g) {
+        var visible = Array.prototype.filter.call(
+          g.querySelectorAll(".post-card"), function (c) { return !c.hidden; }
+        );
+        g.hidden = visible.length === 0;
+        var c = g.querySelector(".count");
+        if (c) c.textContent = visible.length + "편";
       });
       if (empty) empty.hidden = shown !== 0;
       if (count) count.textContent = String(shown);

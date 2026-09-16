@@ -27,6 +27,10 @@
     <div class="hero-stats">
       <span class="pill">글 <strong id="doc-count">29</strong>편</span>
     </div>
+    <p class="start-here">
+      <span class="label">처음이라면</span>
+      <span>전체 지형을 한 장에 담은 <a href="posts/2025-2026-enterprise-ai-adoption-research.html">기업 AI 도입 현황 비교 (2025~2026)</a>부터 보시면 됩니다.</span>
+    </p>
   </div>
 </section>
 
@@ -37,628 +41,667 @@
       <label class="visually-hidden" for="search">검색</label>
       <input type="search" id="search" placeholder="제목, 기관, 키워드로 검색" autocomplete="off">
     </div>
-    <div class="filters" role="group" aria-label="주제 필터">
-      <span class="filter-label">필터</span>
-      <button class="chip" type="button" data-filter="all" aria-pressed="true">전체</button>
-      <button class="chip" type="button" data-filter="보고서" aria-pressed="false">보고서</button>
-      <button class="chip" type="button" data-filter="리서치 정리" aria-pressed="false">리서치 정리</button>
-      <button class="chip" type="button" data-filter="ai 도입" aria-pressed="false">AI 도입</button>
-      <button class="chip" type="button" data-filter="roi" aria-pressed="false">ROI</button>
-      <button class="chip" type="button" data-filter="에이전트" aria-pressed="false">에이전트</button>
-      <button class="chip" type="button" data-filter="조직 변화" aria-pressed="false">조직 변화</button>
-      <button class="chip" type="button" data-filter="인력" aria-pressed="false">인력</button>
-      <button class="chip" type="button" data-filter="생산성" aria-pressed="false">생산성</button>
-      <button class="chip" type="button" data-filter="거버넌스" aria-pressed="false">거버넌스</button>
-      <button class="chip" type="button" data-filter="시장" aria-pressed="false">시장</button>
+    <div class="filters" role="group" aria-label="글 필터">
+      <div class="filter-row">
+        <span class="filter-label">계층</span>
+        <button class="chip chip-layer" type="button" data-filter="all" aria-pressed="true">전체</button>
+        <button class="chip chip-layer" type="button" data-filter="교차 비교" aria-pressed="false">교차 비교</button>
+        <button class="chip chip-layer" type="button" data-filter="기관별 통합" aria-pressed="false">기관별 통합</button>
+        <button class="chip chip-layer" type="button" data-filter="보고서" aria-pressed="false">개별 보고서</button>
+      </div>
+      <div class="filter-row">
+        <span class="filter-label">주제</span>
+        <button class="chip" type="button" data-filter="ai 도입" aria-pressed="false">AI 도입</button>
+        <button class="chip" type="button" data-filter="roi" aria-pressed="false">ROI</button>
+        <button class="chip" type="button" data-filter="에이전트" aria-pressed="false">에이전트</button>
+        <button class="chip" type="button" data-filter="조직 변화" aria-pressed="false">조직 변화</button>
+        <button class="chip" type="button" data-filter="인력" aria-pressed="false">인력</button>
+        <button class="chip" type="button" data-filter="생산성" aria-pressed="false">생산성</button>
+        <button class="chip" type="button" data-filter="거버넌스" aria-pressed="false">거버넌스</button>
+        <button class="chip" type="button" data-filter="시장" aria-pressed="false">시장</button>
+      </div>
     </div>
-    <p style="margin:0;font-size:13px;color:var(--text-faint)"><span id="result-count">29</span>편 표시 중</p>
+    <p class="result-count"><span id="result-count">29</span>편 표시 중</p>
   </div>
 
-  <ul class="post-list" id="post-list">
+  <div id="post-groups">
 
-    <li class="post-card"
-        data-tags="보고서|ai 도입|roi|파일럿 실패|에이전트"
-        data-search="The GenAI Divide: State of AI in Business 2025 기업이 생성형 AI에 300~400억 달러를 썼지만 95%는 손익에 잡히는 효과를 얻지 못했다. 원인을 모델 성능이 아니라 '학습 격차'에서 찾은 보고서. MIT Media Lab · Project NANDA MIT NANDA GenAI Divide 제니이아이 디바이드 생성형 AI 파일럿 실패 95% 학습 격차 섀도 AI Challapally Raskar AI 도입 ROI 파일럿 실패 에이전트">
-      <h2><a href="posts/2025-07-mit-nanda-genai-divide.html">The GenAI Divide: State of AI in Business 2025</a></h2>
-      <p class="dek">기업이 생성형 AI에 300~400억 달러를 썼지만 95%는 손익에 잡히는 효과를 얻지 못했다. 원인을 모델 성능이 아니라 '학습 격차'에서 찾은 보고서.</p>
-      <div class="post-meta">
-        <span class="org">MIT Media Lab · Project NANDA</span>
-        <span class="sep">·</span>
-        <span>2025년 7월</span>
-        <span class="sep">·</span>
-        <span>Challapally, Pease, Raskar, Chari</span>
+    <section class="layer-group" data-layer="교차 비교">
+      <div class="layer-head">
+        <h2>교차 비교</h2>
+        <span class="count">1편</span>
+        <p class="layer-desc">여러 기관의 수치를 나란히 놓고 비교합니다. 전체 지형을 보려면 여기부터.</p>
       </div>
-      <div class="tags">
-        <span class="tag tag-type">보고서</span>
-        <span class="tag">AI 도입</span>
-        <span class="tag">ROI</span>
-        <span class="tag">파일럿 실패</span>
-        <span class="tag">에이전트</span>
-      </div>
-    </li>
+      <ul class="post-list">
 
-    <li class="post-card"
-        data-tags="보고서|ai 도입|roi|에이전트|조직 변화"
-        data-search="The Widening AI Value Gap 전 세계 기업의 5%만 AI로 실질 가치를 만들고 60%는 투자하고도 성과가 없다. 1,250명 임원 조사로 격차가 벌어지는 구조를 분석했다. Boston Consulting Group BCG Boston Consulting Group Widening AI Value Gap 가치 격차 future-built scalers laggards 10-20-70 TSR EBIT Build for the Future AI 도입 ROI 에이전트 조직 변화">
-      <h2><a href="posts/2025-09-bcg-widening-ai-value-gap.html">The Widening AI Value Gap</a></h2>
-      <p class="dek">전 세계 기업의 5%만 AI로 실질 가치를 만들고 60%는 투자하고도 성과가 없다. 1,250명 임원 조사로 격차가 벌어지는 구조를 분석했다.</p>
-      <div class="post-meta">
-        <span class="org">Boston Consulting Group</span>
-        <span class="sep">·</span>
-        <span>2025년 9월</span>
-        <span class="sep">·</span>
-        <span>Apotheker, de Bellefonds, Lukic 외</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">보고서</span>
-        <span class="tag">AI 도입</span>
-        <span class="tag">ROI</span>
-        <span class="tag">에이전트</span>
-        <span class="tag">조직 변화</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="교차 비교|ai 도입|roi|에이전트|생산성|인력|거버넌스"
+            data-search="기업 AI 도입 현황 비교 (2025~2026) 여러 기관이 다른 표본과 방법으로 조사했는데도 결론은 한 곳으로 모인다. 어디서 겹치고 어디서 갈리는지 수치를 나란히 놓고 비교했다. McKinsey · PwC · BCG · Gartner 외 맥킨지 McKinsey PwC BCG 가트너 Gartner Deloitte 딜로이트 IBM Microsoft KPMG Stanford Wharton Menlo EY WEF 비교 교차 분석 교차 비교 AI 도입 ROI 에이전트 생산성 인력 거버넌스">
+          <h2><a href="posts/2025-2026-enterprise-ai-adoption-research.html">기업 AI 도입 현황 비교 (2025~2026)</a></h2>
+          <p class="dek">여러 기관이 다른 표본과 방법으로 조사했는데도 결론은 한 곳으로 모인다. 어디서 겹치고 어디서 갈리는지 수치를 나란히 놓고 비교했다.</p>
+          <div class="post-meta">
+            <span class="org">McKinsey · PwC · BCG · Gartner 외</span>
+            <span class="sep">·</span>
+            <span>2025년 1월 ~ 2026년 9월</span>
+            <span class="sep">·</span>
+            <span>기관 13곳 비교</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="교차 비교">교차 비교</span>
+          <span class="tag">AI 도입</span>
+          <span class="tag">ROI</span>
+          <span class="tag">에이전트</span>
+          <span class="tag">생산성</span>
+          <span class="tag">인력</span>
+          <span class="tag">거버넌스</span>
+          </div>
+        </li>
 
-    <li class="post-card"
-        data-tags="보고서|ai 도입|roi|에이전트"
-        data-search="The state of AI in 2025 105개국 임원 1,993명 조사. 88%가 AI를 쓰지만 3분의 2는 전사 확장을 시작하지도 못했다. 에이전트는 실험 62%, 확장 23%. McKinsey &amp; Company McKinsey 맥킨지 State of AI 2025 QuantumBlack agents innovation transformation EBIT 88% 62% 23% AI 도입 ROI 에이전트">
-      <h2><a href="posts/2025-11-mckinsey-state-of-ai-2025.html">The state of AI in 2025</a></h2>
-      <p class="dek">105개국 임원 1,993명 조사. 88%가 AI를 쓰지만 3분의 2는 전사 확장을 시작하지도 못했다. 에이전트는 실험 62%, 확장 23%.</p>
-      <div class="post-meta">
-        <span class="org">McKinsey &amp; Company</span>
-        <span class="sep">·</span>
-        <span>2025년 11월</span>
-        <span class="sep">·</span>
-        <span>QuantumBlack</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">보고서</span>
-        <span class="tag">AI 도입</span>
-        <span class="tag">ROI</span>
-        <span class="tag">에이전트</span>
-      </div>
-    </li>
+      </ul>
+    </section>
 
-    <li class="post-card"
-        data-tags="보고서|ai 도입|roi|에이전트|조직 변화"
-        data-search="The state of AI in 2026: On the road to ROI 전사 확산은 38%에서 44%로 올랐는데 EBIT 기여는 37%로 전년과 동일했다. 고성과 기업도 2년째 6%에 고정돼 있다. McKinsey &amp; Company McKinsey 맥킨지 State of AI 2026 on the road to ROI EBIT 37% 고성과 기업 워크플로 재설계 에이전틱 코딩 AI 도입 ROI 에이전트 조직 변화">
-      <h2><a href="posts/2026-08-mckinsey-state-of-ai-2026.html">The state of AI in 2026: On the road to ROI</a></h2>
-      <p class="dek">전사 확산은 38%에서 44%로 올랐는데 EBIT 기여는 37%로 전년과 동일했다. 고성과 기업도 2년째 6%에 고정돼 있다.</p>
-      <div class="post-meta">
-        <span class="org">McKinsey &amp; Company</span>
-        <span class="sep">·</span>
-        <span>2026년 8월</span>
-        <span class="sep">·</span>
-        <span>QuantumBlack</span>
+    <section class="layer-group" data-layer="기관별 통합">
+      <div class="layer-head">
+        <h2>기관별 통합</h2>
+        <span class="count">8편</span>
+        <p class="layer-desc">한 기관이 2025~2026년에 낸 보고서들을 한 흐름으로 묶었습니다.</p>
       </div>
-      <div class="tags">
-        <span class="tag tag-type">보고서</span>
-        <span class="tag">AI 도입</span>
-        <span class="tag">ROI</span>
-        <span class="tag">에이전트</span>
-        <span class="tag">조직 변화</span>
-      </div>
-    </li>
+      <ul class="post-list">
 
-    <li class="post-card"
-        data-tags="보고서|ai 도입|roi|인력"
-        data-search="PwC 29th Global CEO Survey 95개국 CEO 4,454명 조사. 56%가 AI로 매출도 비용도 개선하지 못했다고 답했고 둘 다 달성한 CEO는 12%였다. PwC PwC Global CEO Survey 29th 다보스 Davos 56% 12% 매출 비용 reinvention 에이전트 인력 AI 도입 ROI 인력">
-      <h2><a href="posts/2026-01-pwc-global-ceo-survey-29th.html">PwC 29th Global CEO Survey</a></h2>
-      <p class="dek">95개국 CEO 4,454명 조사. 56%가 AI로 매출도 비용도 개선하지 못했다고 답했고 둘 다 달성한 CEO는 12%였다.</p>
-      <div class="post-meta">
-        <span class="org">PwC</span>
-        <span class="sep">·</span>
-        <span>2026년 1월</span>
-        <span class="sep">·</span>
-        <span>다보스 발표</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">보고서</span>
-        <span class="tag">AI 도입</span>
-        <span class="tag">ROI</span>
-        <span class="tag">인력</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="기관별 통합|ai 도입|roi|에이전트|조직 변화"
+            data-search="맥킨지 기업 AI 도입 조사 (2025~2026) 네 기관 중 가장 긴 시계열. 2년 동안 도입은 계속 늘었고 EBIT 기여는 한 번도 움직이지 않았다. McKinsey &amp; Company McKinsey 맥킨지 QuantumBlack State of AI Superagency rewiring capture value 통합 시계열 2025 2026 기관별 통합 AI 도입 ROI 에이전트 조직 변화">
+          <h2><a href="posts/2025-2026-mckinsey-state-of-ai.html">맥킨지 기업 AI 도입 조사 (2025~2026)</a></h2>
+          <p class="dek">네 기관 중 가장 긴 시계열. 2년 동안 도입은 계속 늘었고 EBIT 기여는 한 번도 움직이지 않았다.</p>
+          <div class="post-meta">
+            <span class="org">McKinsey &amp; Company</span>
+            <span class="sep">·</span>
+            <span>2025년 1월 ~ 2026년 8월</span>
+            <span class="sep">·</span>
+            <span>보고서 5건</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="기관별 통합">기관별 통합</span>
+          <span class="tag">AI 도입</span>
+          <span class="tag">ROI</span>
+          <span class="tag">에이전트</span>
+          <span class="tag">조직 변화</span>
+          </div>
+        </li>
 
-    <li class="post-card"
-        data-tags="보고서|생산성|인력|ai 도입"
-        data-search="PwC Global AI Jobs Barometer 2026 설문이 아니라 채용 공고와 기업 재무 데이터를 분석한다. AI 노출도 상위 20% 기업의 생산성이 2018년 대비 163% 성장했다. PwC PwC Global AI Jobs Barometer 2026 임금 프리미엄 62% 생산성 163% 고용 채용 공고 노동시장 생산성 인력 AI 도입">
-      <h2><a href="posts/2026-06-pwc-ai-jobs-barometer-2026.html">PwC Global AI Jobs Barometer 2026</a></h2>
-      <p class="dek">설문이 아니라 채용 공고와 기업 재무 데이터를 분석한다. AI 노출도 상위 20% 기업의 생산성이 2018년 대비 163% 성장했다.</p>
-      <div class="post-meta">
-        <span class="org">PwC</span>
-        <span class="sep">·</span>
-        <span>2026년 6월</span>
-        <span class="sep">·</span>
-        <span>노동시장 데이터 분석</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">보고서</span>
-        <span class="tag">생산성</span>
-        <span class="tag">인력</span>
-        <span class="tag">AI 도입</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="기관별 통합|ai 도입|roi|에이전트|생산성|인력"
+            data-search="PwC 기업 AI 조사 (2025~2026) CEO 설문과 노동시장 분석, 두 렌즈가 정반대 그림을 보여준다. 56%는 아무 성과도 없다는데 상위 기업의 생산성은 앞서간다. PwC PwC Global CEO Survey AI Agent Survey Jobs Barometer 임금 프리미엄 Responsible AI 통합 2025 2026 기관별 통합 AI 도입 ROI 에이전트 생산성 인력">
+          <h2><a href="posts/2025-2026-pwc-ai-research.html">PwC 기업 AI 조사 (2025~2026)</a></h2>
+          <p class="dek">CEO 설문과 노동시장 분석, 두 렌즈가 정반대 그림을 보여준다. 56%는 아무 성과도 없다는데 상위 기업의 생산성은 앞서간다.</p>
+          <div class="post-meta">
+            <span class="org">PwC</span>
+            <span class="sep">·</span>
+            <span>2025년 1월 ~ 2026년 8월</span>
+            <span class="sep">·</span>
+            <span>보고서 6건</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="기관별 통합">기관별 통합</span>
+          <span class="tag">AI 도입</span>
+          <span class="tag">ROI</span>
+          <span class="tag">에이전트</span>
+          <span class="tag">생산성</span>
+          <span class="tag">인력</span>
+          </div>
+        </li>
 
-    <li class="post-card"
-        data-tags="보고서|ai 도입|인력|조직 변화|생산성"
-        data-search="BCG AI at Work 2026 명확한 전략을 가진 기업이 좋은 도구를 산 기업보다 5배 큰 효과를 본다. 그런데 절약된 시간의 66%는 갈 곳을 찾지 못한다. Boston Consulting Group BCG AI at Work 2026 strategy matters more than tools 현장직 74% 인지 부하 즐거움의 역설 10-20-70 AI 도입 인력 조직 변화 생산성">
-      <h2><a href="posts/2026-06-bcg-ai-at-work-2026.html">BCG AI at Work 2026</a></h2>
-      <p class="dek">명확한 전략을 가진 기업이 좋은 도구를 산 기업보다 5배 큰 효과를 본다. 그런데 절약된 시간의 66%는 갈 곳을 찾지 못한다.</p>
-      <div class="post-meta">
-        <span class="org">Boston Consulting Group</span>
-        <span class="sep">·</span>
-        <span>2026년 6월</span>
-        <span class="sep">·</span>
-        <span>근로자 11,749명</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">보고서</span>
-        <span class="tag">AI 도입</span>
-        <span class="tag">인력</span>
-        <span class="tag">조직 변화</span>
-        <span class="tag">생산성</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="기관별 통합|ai 도입|roi|에이전트|조직 변화|인력"
+            data-search="BCG 기업 AI 조사 (2025~2026) 임원과 근로자를 따로 조사한다. 두 조사를 겹쳐 읽으면 경영진이 보고하는 성과와 현장이 겪는 현실 사이의 거리가 드러난다. Boston Consulting Group BCG AI at Work Build for the Future 근로자 조사 임원 조사 10-20-70 통합 2025 2026 기관별 통합 AI 도입 ROI 에이전트 조직 변화 인력">
+          <h2><a href="posts/2025-2026-bcg-ai-research.html">BCG 기업 AI 조사 (2025~2026)</a></h2>
+          <p class="dek">임원과 근로자를 따로 조사한다. 두 조사를 겹쳐 읽으면 경영진이 보고하는 성과와 현장이 겪는 현실 사이의 거리가 드러난다.</p>
+          <div class="post-meta">
+            <span class="org">Boston Consulting Group</span>
+            <span class="sep">·</span>
+            <span>2025년 6월 ~ 2026년</span>
+            <span class="sep">·</span>
+            <span>보고서 4건</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="기관별 통합">기관별 통합</span>
+          <span class="tag">AI 도입</span>
+          <span class="tag">ROI</span>
+          <span class="tag">에이전트</span>
+          <span class="tag">조직 변화</span>
+          <span class="tag">인력</span>
+          </div>
+        </li>
 
-    <li class="post-card"
-        data-tags="보고서|에이전트|거버넌스|ai 도입"
-        data-search="가트너 에이전틱 AI 프로젝트 취소 전망 2027년 말까지 에이전틱 AI 프로젝트의 40% 이상이 취소될 것으로 본다. 함께 지목한 문제가 '에이전트 워싱'이다. Gartner Gartner 가트너 agentic AI 취소 40% agent washing 에이전트 워싱 predicts 2027 거버넌스 에이전트 거버넌스 AI 도입">
-      <h2><a href="posts/2025-06-gartner-agentic-ai-project-cancellations.html">가트너 에이전틱 AI 프로젝트 취소 전망</a></h2>
-      <p class="dek">2027년 말까지 에이전틱 AI 프로젝트의 40% 이상이 취소될 것으로 본다. 함께 지목한 문제가 '에이전트 워싱'이다.</p>
-      <div class="post-meta">
-        <span class="org">Gartner</span>
-        <span class="sep">·</span>
-        <span>2025년 6월</span>
-        <span class="sep">·</span>
-        <span>예측 (Predicts)</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">보고서</span>
-        <span class="tag">에이전트</span>
-        <span class="tag">거버넌스</span>
-        <span class="tag">AI 도입</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="기관별 통합|ai 도입|에이전트|roi|거버넌스"
+            data-search="가트너 기업 AI 조사와 전망 (2025~2026) 설문과 함께 시점을 못 박은 예측을 내놓는다. 에이전트 배포는 17%인데 2년 내 배포 계획은 60%가 넘는다. Gartner Gartner 가트너 CIO Survey CEO Survey Hype Cycle 하이프 사이클 에이전트 워싱 예측 통합 2025 2026 기관별 통합 AI 도입 에이전트 ROI 거버넌스">
+          <h2><a href="posts/2025-2026-gartner-ai-research.html">가트너 기업 AI 조사와 전망 (2025~2026)</a></h2>
+          <p class="dek">설문과 함께 시점을 못 박은 예측을 내놓는다. 에이전트 배포는 17%인데 2년 내 배포 계획은 60%가 넘는다.</p>
+          <div class="post-meta">
+            <span class="org">Gartner</span>
+            <span class="sep">·</span>
+            <span>2025년 6월 ~ 2026년 8월</span>
+            <span class="sep">·</span>
+            <span>자료 11건</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="기관별 통합">기관별 통합</span>
+          <span class="tag">AI 도입</span>
+          <span class="tag">에이전트</span>
+          <span class="tag">ROI</span>
+          <span class="tag">거버넌스</span>
+          </div>
+        </li>
 
-    <li class="post-card"
-        data-tags="보고서|ai 도입|에이전트|거버넌스|조직 변화"
-        data-search="Deloitte State of AI in the Enterprise 2026 24개국 리더 3,235명 조사. 에이전트가 가드레일보다 빠르게 확산되고 있다. 에이전틱 거버넌스가 성숙한 조직은 21%뿐이다. Deloitte Deloitte 딜로이트 State of AI in the Enterprise 2026 generative 거버넌스 21% 가드레일 human-agentic workforce AI 도입 에이전트 거버넌스 조직 변화">
-      <h2><a href="posts/2026-deloitte-state-of-ai-in-the-enterprise.html">Deloitte State of AI in the Enterprise 2026</a></h2>
-      <p class="dek">24개국 리더 3,235명 조사. 에이전트가 가드레일보다 빠르게 확산되고 있다. 에이전틱 거버넌스가 성숙한 조직은 21%뿐이다.</p>
-      <div class="post-meta">
-        <span class="org">Deloitte</span>
-        <span class="sep">·</span>
-        <span>2026년</span>
-        <span class="sep">·</span>
-        <span>24개국 3,235명</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">보고서</span>
-        <span class="tag">AI 도입</span>
-        <span class="tag">에이전트</span>
-        <span class="tag">거버넌스</span>
-        <span class="tag">조직 변화</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="기관별 통합|ai 도입|에이전트|거버넌스|조직 변화"
+            data-search="딜로이트 기업 AI 조사 (2025~2026) 분기 단위로 내던 조사를 연간 판으로 정리했다. 관통하는 메시지는 에이전트가 통제 체계보다 빠르다는 것이다. Deloitte Deloitte 딜로이트 State of AI in the Enterprise generative 거버넌스 통합 2025 2026 기관별 통합 AI 도입 에이전트 거버넌스 조직 변화">
+          <h2><a href="posts/2025-2026-deloitte-ai-research.html">딜로이트 기업 AI 조사 (2025~2026)</a></h2>
+          <p class="dek">분기 단위로 내던 조사를 연간 판으로 정리했다. 관통하는 메시지는 에이전트가 통제 체계보다 빠르다는 것이다.</p>
+          <div class="post-meta">
+            <span class="org">Deloitte</span>
+            <span class="sep">·</span>
+            <span>2025년 ~ 2026년</span>
+            <span class="sep">·</span>
+            <span>보고서 2건</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="기관별 통합">기관별 통합</span>
+          <span class="tag">AI 도입</span>
+          <span class="tag">에이전트</span>
+          <span class="tag">거버넌스</span>
+          <span class="tag">조직 변화</span>
+          </div>
+        </li>
 
-    <li class="post-card"
-        data-tags="보고서|ai 도입|에이전트|생산성|거버넌스"
-        data-search="Stanford HAI AI Index Report 2026 대학 연구기관이 내는 지표. 도입률 88%인데 에이전트 배포는 거의 모든 기능에서 한 자릿수에 머문다. Stanford HAI Stanford HAI AI Index 2026 스탠퍼드 88% WebArena 벤치마크 인시던트 부정확성 economy AI 도입 에이전트 생산성 거버넌스">
-      <h2><a href="posts/2026-stanford-hai-ai-index.html">Stanford HAI AI Index Report 2026</a></h2>
-      <p class="dek">대학 연구기관이 내는 지표. 도입률 88%인데 에이전트 배포는 거의 모든 기능에서 한 자릿수에 머문다.</p>
-      <div class="post-meta">
-        <span class="org">Stanford HAI</span>
-        <span class="sep">·</span>
-        <span>2026년</span>
-        <span class="sep">·</span>
-        <span>연례 지표 보고서</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">보고서</span>
-        <span class="tag">AI 도입</span>
-        <span class="tag">에이전트</span>
-        <span class="tag">생산성</span>
-        <span class="tag">거버넌스</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="기관별 통합|ai 도입|roi|조직 변화|에이전트"
+            data-search="IBM 기업 AI 조사 (2025~2026) 2025년은 ROI가 왜 안 나오는가였고 2026년은 누가 책임지는가였다. 최고 AI 책임자가 26%에서 76%로 늘었다. IBM Institute for Business Value IBM CEO Study Institute for Business Value IBV chief AI officer CAIO 통합 2025 2026 기관별 통합 AI 도입 ROI 조직 변화 에이전트">
+          <h2><a href="posts/2025-2026-ibm-ai-research.html">IBM 기업 AI 조사 (2025~2026)</a></h2>
+          <p class="dek">2025년은 ROI가 왜 안 나오는가였고 2026년은 누가 책임지는가였다. 최고 AI 책임자가 26%에서 76%로 늘었다.</p>
+          <div class="post-meta">
+            <span class="org">IBM Institute for Business Value</span>
+            <span class="sep">·</span>
+            <span>2025년 5월 ~ 2026년 5월</span>
+            <span class="sep">·</span>
+            <span>보고서 2건</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="기관별 통합">기관별 통합</span>
+          <span class="tag">AI 도입</span>
+          <span class="tag">ROI</span>
+          <span class="tag">조직 변화</span>
+          <span class="tag">에이전트</span>
+          </div>
+        </li>
 
-    <li class="post-card"
-        data-tags="보고서|ai 도입|roi|에이전트|조직 변화"
-        data-search="IBM CEO Study 2025 33개국 CEO 2,000명 조사. AI 이니셔티브의 25%만 기대한 ROI를 냈고 16%만 전사 확장에 성공했다. IBM Institute for Business Value IBM CEO Study 2025 Institute for Business Value IBV 25% 16% 29% ROI 측정 옥스퍼드 AI 도입 ROI 에이전트 조직 변화">
-      <h2><a href="posts/2025-05-ibm-ceo-study.html">IBM CEO Study 2025</a></h2>
-      <p class="dek">33개국 CEO 2,000명 조사. AI 이니셔티브의 25%만 기대한 ROI를 냈고 16%만 전사 확장에 성공했다.</p>
-      <div class="post-meta">
-        <span class="org">IBM Institute for Business Value</span>
-        <span class="sep">·</span>
-        <span>2025년 5월</span>
-        <span class="sep">·</span>
-        <span>옥스퍼드 이코노믹스 협력</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">보고서</span>
-        <span class="tag">AI 도입</span>
-        <span class="tag">ROI</span>
-        <span class="tag">에이전트</span>
-        <span class="tag">조직 변화</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="기관별 통합|인력|에이전트|생산성|조직 변화"
+            data-search="마이크로소프트 업무 트렌드 조사 (2025~2026) 조직 구조와 개인의 일하는 방식이 어떻게 바뀌는가를 묻는다. 설문에 실제 제품 사용 신호를 결합한다. Microsoft &amp; LinkedIn Microsoft LinkedIn Work Trend Index 마이크로소프트 링크드인 Frontier Firm 재량 통합 2025 2026 기관별 통합 인력 에이전트 생산성 조직 변화">
+          <h2><a href="posts/2025-2026-microsoft-work-trend-index.html">마이크로소프트 업무 트렌드 조사 (2025~2026)</a></h2>
+          <p class="dek">조직 구조와 개인의 일하는 방식이 어떻게 바뀌는가를 묻는다. 설문에 실제 제품 사용 신호를 결합한다.</p>
+          <div class="post-meta">
+            <span class="org">Microsoft &amp; LinkedIn</span>
+            <span class="sep">·</span>
+            <span>2025년 4월 ~ 2026년 5월</span>
+            <span class="sep">·</span>
+            <span>보고서 2건</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="기관별 통합">기관별 통합</span>
+          <span class="tag">인력</span>
+          <span class="tag">에이전트</span>
+          <span class="tag">생산성</span>
+          <span class="tag">조직 변화</span>
+          </div>
+        </li>
 
-    <li class="post-card"
-        data-tags="보고서|조직 변화|ai 도입|roi|거버넌스"
-        data-search="IBM CEO Study 2026 최고 AI 책임자를 둔 기업이 1년 만에 26%에서 76%로 늘었다. 그 자리를 둔 기업의 AI 투자 수익률이 5% 더 높았다. IBM Institute for Business Value IBM CEO Study 2026 chief AI officer CAIO 최고 AI 책임자 76% C-suite AI 주권 sovereignty 조직 변화 AI 도입 ROI 거버넌스">
-      <h2><a href="posts/2026-05-ibm-ceo-study.html">IBM CEO Study 2026</a></h2>
-      <p class="dek">최고 AI 책임자를 둔 기업이 1년 만에 26%에서 76%로 늘었다. 그 자리를 둔 기업의 AI 투자 수익률이 5% 더 높았다.</p>
-      <div class="post-meta">
-        <span class="org">IBM Institute for Business Value</span>
-        <span class="sep">·</span>
-        <span>2026년 5월</span>
-        <span class="sep">·</span>
-        <span>33개국 2,000명</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">보고서</span>
-        <span class="tag">조직 변화</span>
-        <span class="tag">AI 도입</span>
-        <span class="tag">ROI</span>
-        <span class="tag">거버넌스</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="기관별 통합|에이전트|ai 도입|roi"
+            data-search="KPMG 기업 AI 조사 (2025~2026) 유일한 분기 단위 추적 조사. 다만 배포 기준이 느슨해 같은 시기 가트너의 17%와 KPMG의 54%가 함께 존재한다. KPMG KPMG AI Quarterly Pulse Survey 분기 추적 에이전트 배포 통합 2025 2026 기관별 통합 에이전트 AI 도입 ROI">
+          <h2><a href="posts/2025-2026-kpmg-ai-research.html">KPMG 기업 AI 조사 (2025~2026)</a></h2>
+          <p class="dek">유일한 분기 단위 추적 조사. 다만 배포 기준이 느슨해 같은 시기 가트너의 17%와 KPMG의 54%가 함께 존재한다.</p>
+          <div class="post-meta">
+            <span class="org">KPMG</span>
+            <span class="sep">·</span>
+            <span>2025년 ~ 2026년</span>
+            <span class="sep">·</span>
+            <span>분기 조사 8회 이상</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="기관별 통합">기관별 통합</span>
+          <span class="tag">에이전트</span>
+          <span class="tag">AI 도입</span>
+          <span class="tag">ROI</span>
+          </div>
+        </li>
 
-    <li class="post-card"
-        data-tags="보고서|인력|에이전트|조직 변화|생산성"
-        data-search="Microsoft Work Trend Index 2025 사람과 에이전트가 함께 일하는 '프론티어 기업'을 제시했다. 이곳 직원의 71%가 회사가 잘 나간다고 답했고 전체 평균은 37%였다. Microsoft &amp; LinkedIn Microsoft LinkedIn Work Trend Index 2025 마이크로소프트 링크드인 Frontier Firm 프론티어 기업 에이전트 인력 에이전트 조직 변화 생산성">
-      <h2><a href="posts/2025-04-microsoft-work-trend-index.html">Microsoft Work Trend Index 2025</a></h2>
-      <p class="dek">사람과 에이전트가 함께 일하는 '프론티어 기업'을 제시했다. 이곳 직원의 71%가 회사가 잘 나간다고 답했고 전체 평균은 37%였다.</p>
-      <div class="post-meta">
-        <span class="org">Microsoft &amp; LinkedIn</span>
-        <span class="sep">·</span>
-        <span>2025년 4월</span>
-        <span class="sep">·</span>
-        <span>31개국 31,000명</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">보고서</span>
-        <span class="tag">인력</span>
-        <span class="tag">에이전트</span>
-        <span class="tag">조직 변화</span>
-        <span class="tag">생산성</span>
-      </div>
-    </li>
+      </ul>
+    </section>
 
-    <li class="post-card"
-        data-tags="보고서|인력|에이전트|생산성|조직 변화"
-        data-search="Microsoft Work Trend Index 2026 마이크로소프트 365 활성 에이전트가 전년 대비 15배 늘었다. 에이전트가 실행을 맡을수록 사람의 재량이 커진다는 '새로운 재량 방정식'. Microsoft Microsoft Work Trend Index 2026 마이크로소프트 human agency 재량 15배 Frontier Professional 58% 인력 에이전트 생산성 조직 변화">
-      <h2><a href="posts/2026-05-microsoft-work-trend-index.html">Microsoft Work Trend Index 2026</a></h2>
-      <p class="dek">마이크로소프트 365 활성 에이전트가 전년 대비 15배 늘었다. 에이전트가 실행을 맡을수록 사람의 재량이 커진다는 '새로운 재량 방정식'.</p>
-      <div class="post-meta">
-        <span class="org">Microsoft</span>
-        <span class="sep">·</span>
-        <span>2026년 5월</span>
-        <span class="sep">·</span>
-        <span>10개 시장 20,000명</span>
+    <section class="layer-group" data-layer="개별 보고서">
+      <div class="layer-head">
+        <h2>개별 보고서</h2>
+        <span class="count">20편</span>
+        <p class="layer-desc">보고서 한 편씩 정리했습니다. 원문 링크와 조사 방법, 한계를 각각 담습니다.</p>
       </div>
-      <div class="tags">
-        <span class="tag tag-type">보고서</span>
-        <span class="tag">인력</span>
-        <span class="tag">에이전트</span>
-        <span class="tag">생산성</span>
-        <span class="tag">조직 변화</span>
-      </div>
-    </li>
+      <ul class="post-list">
 
-    <li class="post-card"
-        data-tags="보고서|에이전트|ai 도입|roi"
-        data-search="KPMG AI Quarterly Pulse Survey 유일한 분기 단위 추적 조사. 에이전트 배포가 두 분기 만에 11%에서 42%로 뛰었고 이후 54%까지 올랐다. KPMG KPMG AI Quarterly Pulse Survey 분기 에이전트 배포 42% 54% build buy 혼합 역량 격차 92% 에이전트 AI 도입 ROI">
-      <h2><a href="posts/2026-kpmg-ai-quarterly-pulse-survey.html">KPMG AI Quarterly Pulse Survey</a></h2>
-      <p class="dek">유일한 분기 단위 추적 조사. 에이전트 배포가 두 분기 만에 11%에서 42%로 뛰었고 이후 54%까지 올랐다.</p>
-      <div class="post-meta">
-        <span class="org">KPMG</span>
-        <span class="sep">·</span>
-        <span>2025~2026년</span>
-        <span class="sep">·</span>
-        <span>분기 추적</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">보고서</span>
-        <span class="tag">에이전트</span>
-        <span class="tag">AI 도입</span>
-        <span class="tag">ROI</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="보고서|ai 도입|roi|파일럿 실패|에이전트"
+            data-search="The GenAI Divide: State of AI in Business 2025 기업이 생성형 AI에 300~400억 달러를 썼지만 95%는 손익에 잡히는 효과를 얻지 못했다. 원인을 모델 성능이 아니라 '학습 격차'에서 찾은 보고서. MIT Media Lab · Project NANDA MIT NANDA GenAI Divide 제니이아이 디바이드 생성형 AI 파일럿 실패 95% 학습 격차 섀도 AI Challapally Raskar 개별 보고서 AI 도입 ROI 파일럿 실패 에이전트">
+          <h2><a href="posts/2025-07-mit-nanda-genai-divide.html">The GenAI Divide: State of AI in Business 2025</a></h2>
+          <p class="dek">기업이 생성형 AI에 300~400억 달러를 썼지만 95%는 손익에 잡히는 효과를 얻지 못했다. 원인을 모델 성능이 아니라 '학습 격차'에서 찾은 보고서.</p>
+          <div class="post-meta">
+            <span class="org">MIT Media Lab · Project NANDA</span>
+            <span class="sep">·</span>
+            <span>2025년 7월</span>
+            <span class="sep">·</span>
+            <span>Challapally, Pease, Raskar, Chari</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="개별 보고서">개별 보고서</span>
+          <span class="tag">AI 도입</span>
+          <span class="tag">ROI</span>
+          <span class="tag">파일럿 실패</span>
+          <span class="tag">에이전트</span>
+          </div>
+        </li>
 
-    <li class="post-card"
-        data-tags="보고서|ai 도입|roi|생산성"
-        data-search="Wharton–GBK AI Adoption Report 2025 다른 기관보다 훨씬 밝은 그림을 보여준다. 리더의 4분의 3이 긍정적 수익을 봤다고 답했고 72%가 ROI를 공식 측정한다. Wharton Human-AI Research &amp; GBK Wharton GBK 와튼 AI Adoption Report 2025 accountable acceleration 82% 72% ROI 예산 AI 도입 ROI 생산성">
-      <h2><a href="posts/2025-10-wharton-gbk-ai-adoption-report.html">Wharton–GBK AI Adoption Report 2025</a></h2>
-      <p class="dek">다른 기관보다 훨씬 밝은 그림을 보여준다. 리더의 4분의 3이 긍정적 수익을 봤다고 답했고 72%가 ROI를 공식 측정한다.</p>
-      <div class="post-meta">
-        <span class="org">Wharton Human-AI Research &amp; GBK</span>
-        <span class="sep">·</span>
-        <span>2025년 10월</span>
-        <span class="sep">·</span>
-        <span>3차 연례 조사</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">보고서</span>
-        <span class="tag">AI 도입</span>
-        <span class="tag">ROI</span>
-        <span class="tag">생산성</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="보고서|ai 도입|roi|에이전트|조직 변화"
+            data-search="The Widening AI Value Gap 전 세계 기업의 5%만 AI로 실질 가치를 만들고 60%는 투자하고도 성과가 없다. 1,250명 임원 조사로 격차가 벌어지는 구조를 분석했다. Boston Consulting Group BCG Boston Consulting Group Widening AI Value Gap 가치 격차 future-built scalers laggards 10-20-70 TSR EBIT Build for the Future 개별 보고서 AI 도입 ROI 에이전트 조직 변화">
+          <h2><a href="posts/2025-09-bcg-widening-ai-value-gap.html">The Widening AI Value Gap</a></h2>
+          <p class="dek">전 세계 기업의 5%만 AI로 실질 가치를 만들고 60%는 투자하고도 성과가 없다. 1,250명 임원 조사로 격차가 벌어지는 구조를 분석했다.</p>
+          <div class="post-meta">
+            <span class="org">Boston Consulting Group</span>
+            <span class="sep">·</span>
+            <span>2025년 9월</span>
+            <span class="sep">·</span>
+            <span>Apotheker, de Bellefonds, Lukic 외</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="개별 보고서">개별 보고서</span>
+          <span class="tag">AI 도입</span>
+          <span class="tag">ROI</span>
+          <span class="tag">에이전트</span>
+          <span class="tag">조직 변화</span>
+          </div>
+        </li>
 
-    <li class="post-card"
-        data-tags="보고서|ai 도입|시장"
-        data-search="Menlo Ventures State of Generative AI 2025 기업 AI 지출이 1년 만에 세 배 늘어 370억 달러에 이르렀다. 모델 공급자별 점유율 변화도 함께 추적한다. Menlo Ventures Menlo Ventures 멘로 벤처스 State of Generative AI 2025 37B 370억 Anthropic OpenAI 점유율 LLM 지출 AI 도입 시장">
-      <h2><a href="posts/2025-12-menlo-ventures-state-of-genai.html">Menlo Ventures State of Generative AI 2025</a></h2>
-      <p class="dek">기업 AI 지출이 1년 만에 세 배 늘어 370억 달러에 이르렀다. 모델 공급자별 점유율 변화도 함께 추적한다.</p>
-      <div class="post-meta">
-        <span class="org">Menlo Ventures</span>
-        <span class="sep">·</span>
-        <span>2025년 12월</span>
-        <span class="sep">·</span>
-        <span>벤처캐피털 시장 보고서</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">보고서</span>
-        <span class="tag">AI 도입</span>
-        <span class="tag">시장</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="보고서|ai 도입|roi|에이전트"
+            data-search="The state of AI in 2025 105개국 임원 1,993명 조사. 88%가 AI를 쓰지만 3분의 2는 전사 확장을 시작하지도 못했다. 에이전트는 실험 62%, 확장 23%. McKinsey &amp; Company McKinsey 맥킨지 State of AI 2025 QuantumBlack agents innovation transformation EBIT 88% 62% 23% 개별 보고서 AI 도입 ROI 에이전트">
+          <h2><a href="posts/2025-11-mckinsey-state-of-ai-2025.html">The state of AI in 2025</a></h2>
+          <p class="dek">105개국 임원 1,993명 조사. 88%가 AI를 쓰지만 3분의 2는 전사 확장을 시작하지도 못했다. 에이전트는 실험 62%, 확장 23%.</p>
+          <div class="post-meta">
+            <span class="org">McKinsey &amp; Company</span>
+            <span class="sep">·</span>
+            <span>2025년 11월</span>
+            <span class="sep">·</span>
+            <span>QuantumBlack</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="개별 보고서">개별 보고서</span>
+          <span class="tag">AI 도입</span>
+          <span class="tag">ROI</span>
+          <span class="tag">에이전트</span>
+          </div>
+        </li>
 
-    <li class="post-card"
-        data-tags="보고서|roi|에이전트|ai 도입"
-        data-search="Google Cloud ROI of AI 2025 · 2026 다른 기관이 성과를 낸 소수를 5~6%로 볼 때 이 조사는 74%가 1년 안에 ROI를 봤다고 보고한다. 왜 다른지가 읽는 핵심이다. Google Cloud Google Cloud ROI of AI 2025 2026 구글 클라우드 74% 52% 에이전트 배포 84% 책임 소재 ROI 에이전트 AI 도입">
-      <h2><a href="posts/2025-2026-google-cloud-roi-of-ai.html">Google Cloud ROI of AI 2025 · 2026</a></h2>
-      <p class="dek">다른 기관이 성과를 낸 소수를 5~6%로 볼 때 이 조사는 74%가 1년 안에 ROI를 봤다고 보고한다. 왜 다른지가 읽는 핵심이다.</p>
-      <div class="post-meta">
-        <span class="org">Google Cloud</span>
-        <span class="sep">·</span>
-        <span>2025년 9월 · 2026년 7월</span>
-        <span class="sep">·</span>
-        <span>임원 설문</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">보고서</span>
-        <span class="tag">ROI</span>
-        <span class="tag">에이전트</span>
-        <span class="tag">AI 도입</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="보고서|ai 도입|roi|에이전트|조직 변화"
+            data-search="The state of AI in 2026: On the road to ROI 전사 확산은 38%에서 44%로 올랐는데 EBIT 기여는 37%로 전년과 동일했다. 고성과 기업도 2년째 6%에 고정돼 있다. McKinsey &amp; Company McKinsey 맥킨지 State of AI 2026 on the road to ROI EBIT 37% 고성과 기업 워크플로 재설계 에이전틱 코딩 개별 보고서 AI 도입 ROI 에이전트 조직 변화">
+          <h2><a href="posts/2026-08-mckinsey-state-of-ai-2026.html">The state of AI in 2026: On the road to ROI</a></h2>
+          <p class="dek">전사 확산은 38%에서 44%로 올랐는데 EBIT 기여는 37%로 전년과 동일했다. 고성과 기업도 2년째 6%에 고정돼 있다.</p>
+          <div class="post-meta">
+            <span class="org">McKinsey &amp; Company</span>
+            <span class="sep">·</span>
+            <span>2026년 8월</span>
+            <span class="sep">·</span>
+            <span>QuantumBlack</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="개별 보고서">개별 보고서</span>
+          <span class="tag">AI 도입</span>
+          <span class="tag">ROI</span>
+          <span class="tag">에이전트</span>
+          <span class="tag">조직 변화</span>
+          </div>
+        </li>
 
-    <li class="post-card"
-        data-tags="보고서|roi|인력|거버넌스|에이전트"
-        data-search="EY AI Pulse Survey AI로 얻은 생산성 향상분이 감원이 아니라 재투자로 흐른다. 2026년에는 토큰 비용 급등으로 재무 점검이 시작됐다. EY EY AI Pulse Survey 97% 재투자 reinvestment 토큰 비용 token cost 책임 있는 AI responsible governance ROI 인력 거버넌스 에이전트">
-      <h2><a href="posts/2025-2026-ey-ai-pulse-survey.html">EY AI Pulse Survey</a></h2>
-      <p class="dek">AI로 얻은 생산성 향상분이 감원이 아니라 재투자로 흐른다. 2026년에는 토큰 비용 급등으로 재무 점검이 시작됐다.</p>
-      <div class="post-meta">
-        <span class="org">EY</span>
-        <span class="sep">·</span>
-        <span>2025~2026년</span>
-        <span class="sep">·</span>
-        <span>경영진 펄스 설문</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">보고서</span>
-        <span class="tag">ROI</span>
-        <span class="tag">인력</span>
-        <span class="tag">거버넌스</span>
-        <span class="tag">에이전트</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="보고서|ai 도입|roi|인력"
+            data-search="PwC 29th Global CEO Survey 95개국 CEO 4,454명 조사. 56%가 AI로 매출도 비용도 개선하지 못했다고 답했고 둘 다 달성한 CEO는 12%였다. PwC PwC Global CEO Survey 29th 다보스 Davos 56% 12% 매출 비용 reinvention 에이전트 인력 개별 보고서 AI 도입 ROI 인력">
+          <h2><a href="posts/2026-01-pwc-global-ceo-survey-29th.html">PwC 29th Global CEO Survey</a></h2>
+          <p class="dek">95개국 CEO 4,454명 조사. 56%가 AI로 매출도 비용도 개선하지 못했다고 답했고 둘 다 달성한 CEO는 12%였다.</p>
+          <div class="post-meta">
+            <span class="org">PwC</span>
+            <span class="sep">·</span>
+            <span>2026년 1월</span>
+            <span class="sep">·</span>
+            <span>다보스 발표</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="개별 보고서">개별 보고서</span>
+          <span class="tag">AI 도입</span>
+          <span class="tag">ROI</span>
+          <span class="tag">인력</span>
+          </div>
+        </li>
 
-    <li class="post-card"
-        data-tags="보고서|인력|생산성|ai 도입"
-        data-search="WEF Future of Jobs Report 2025 2030년까지 1억 7천만 개가 생기고 9천 2백만 개가 사라진다. 고용주가 꼽은 최대 장벽은 역량 격차였다. World Economic Forum WEF World Economic Forum Future of Jobs 2025 세계경제포럼 일자리 1억 7천만 역량 격차 63% 재교육 인력 생산성 AI 도입">
-      <h2><a href="posts/2025-01-wef-future-of-jobs-report.html">WEF Future of Jobs Report 2025</a></h2>
-      <p class="dek">2030년까지 1억 7천만 개가 생기고 9천 2백만 개가 사라진다. 고용주가 꼽은 최대 장벽은 역량 격차였다.</p>
-      <div class="post-meta">
-        <span class="org">World Economic Forum</span>
-        <span class="sep">·</span>
-        <span>2025년 1월</span>
-        <span class="sep">·</span>
-        <span>격년 노동시장 전망</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">보고서</span>
-        <span class="tag">인력</span>
-        <span class="tag">생산성</span>
-        <span class="tag">AI 도입</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="보고서|생산성|인력|ai 도입"
+            data-search="PwC Global AI Jobs Barometer 2026 설문이 아니라 채용 공고와 기업 재무 데이터를 분석한다. AI 노출도 상위 20% 기업의 생산성이 2018년 대비 163% 성장했다. PwC PwC Global AI Jobs Barometer 2026 임금 프리미엄 62% 생산성 163% 고용 채용 공고 노동시장 개별 보고서 생산성 인력 AI 도입">
+          <h2><a href="posts/2026-06-pwc-ai-jobs-barometer-2026.html">PwC Global AI Jobs Barometer 2026</a></h2>
+          <p class="dek">설문이 아니라 채용 공고와 기업 재무 데이터를 분석한다. AI 노출도 상위 20% 기업의 생산성이 2018년 대비 163% 성장했다.</p>
+          <div class="post-meta">
+            <span class="org">PwC</span>
+            <span class="sep">·</span>
+            <span>2026년 6월</span>
+            <span class="sep">·</span>
+            <span>노동시장 데이터 분석</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="개별 보고서">개별 보고서</span>
+          <span class="tag">생산성</span>
+          <span class="tag">인력</span>
+          <span class="tag">AI 도입</span>
+          </div>
+        </li>
 
-    <li class="post-card"
-        data-tags="리서치 정리|ai 도입|roi|에이전트|조직 변화"
-        data-search="맥킨지 기업 AI 도입 조사 (2025~2026) 네 기관 중 가장 긴 시계열. 2년 동안 도입은 계속 늘었고 EBIT 기여는 한 번도 움직이지 않았다. McKinsey &amp; Company McKinsey 맥킨지 QuantumBlack State of AI Superagency rewiring capture value 통합 시계열 2025 2026 AI 도입 ROI 에이전트 조직 변화">
-      <h2><a href="posts/2025-2026-mckinsey-state-of-ai.html">맥킨지 기업 AI 도입 조사 (2025~2026)</a></h2>
-      <p class="dek">네 기관 중 가장 긴 시계열. 2년 동안 도입은 계속 늘었고 EBIT 기여는 한 번도 움직이지 않았다.</p>
-      <div class="post-meta">
-        <span class="org">McKinsey &amp; Company</span>
-        <span class="sep">·</span>
-        <span>2025년 1월 ~ 2026년 8월</span>
-        <span class="sep">·</span>
-        <span>보고서 5건</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">리서치 정리</span>
-        <span class="tag">AI 도입</span>
-        <span class="tag">ROI</span>
-        <span class="tag">에이전트</span>
-        <span class="tag">조직 변화</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="보고서|ai 도입|인력|조직 변화|생산성"
+            data-search="BCG AI at Work 2026 명확한 전략을 가진 기업이 좋은 도구를 산 기업보다 5배 큰 효과를 본다. 그런데 절약된 시간의 66%는 갈 곳을 찾지 못한다. Boston Consulting Group BCG AI at Work 2026 strategy matters more than tools 현장직 74% 인지 부하 즐거움의 역설 10-20-70 개별 보고서 AI 도입 인력 조직 변화 생산성">
+          <h2><a href="posts/2026-06-bcg-ai-at-work-2026.html">BCG AI at Work 2026</a></h2>
+          <p class="dek">명확한 전략을 가진 기업이 좋은 도구를 산 기업보다 5배 큰 효과를 본다. 그런데 절약된 시간의 66%는 갈 곳을 찾지 못한다.</p>
+          <div class="post-meta">
+            <span class="org">Boston Consulting Group</span>
+            <span class="sep">·</span>
+            <span>2026년 6월</span>
+            <span class="sep">·</span>
+            <span>근로자 11,749명</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="개별 보고서">개별 보고서</span>
+          <span class="tag">AI 도입</span>
+          <span class="tag">인력</span>
+          <span class="tag">조직 변화</span>
+          <span class="tag">생산성</span>
+          </div>
+        </li>
 
-    <li class="post-card"
-        data-tags="리서치 정리|ai 도입|roi|에이전트|생산성|인력"
-        data-search="PwC 기업 AI 조사 (2025~2026) CEO 설문과 노동시장 분석, 두 렌즈가 정반대 그림을 보여준다. 56%는 아무 성과도 없다는데 상위 기업의 생산성은 앞서간다. PwC PwC Global CEO Survey AI Agent Survey Jobs Barometer 임금 프리미엄 Responsible AI 통합 2025 2026 AI 도입 ROI 에이전트 생산성 인력">
-      <h2><a href="posts/2025-2026-pwc-ai-research.html">PwC 기업 AI 조사 (2025~2026)</a></h2>
-      <p class="dek">CEO 설문과 노동시장 분석, 두 렌즈가 정반대 그림을 보여준다. 56%는 아무 성과도 없다는데 상위 기업의 생산성은 앞서간다.</p>
-      <div class="post-meta">
-        <span class="org">PwC</span>
-        <span class="sep">·</span>
-        <span>2025년 1월 ~ 2026년 8월</span>
-        <span class="sep">·</span>
-        <span>보고서 6건</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">리서치 정리</span>
-        <span class="tag">AI 도입</span>
-        <span class="tag">ROI</span>
-        <span class="tag">에이전트</span>
-        <span class="tag">생산성</span>
-        <span class="tag">인력</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="보고서|에이전트|거버넌스|ai 도입"
+            data-search="가트너 에이전틱 AI 프로젝트 취소 전망 2027년 말까지 에이전틱 AI 프로젝트의 40% 이상이 취소될 것으로 본다. 함께 지목한 문제가 '에이전트 워싱'이다. Gartner Gartner 가트너 agentic AI 취소 40% agent washing 에이전트 워싱 predicts 2027 거버넌스 개별 보고서 에이전트 거버넌스 AI 도입">
+          <h2><a href="posts/2025-06-gartner-agentic-ai-project-cancellations.html">가트너 에이전틱 AI 프로젝트 취소 전망</a></h2>
+          <p class="dek">2027년 말까지 에이전틱 AI 프로젝트의 40% 이상이 취소될 것으로 본다. 함께 지목한 문제가 '에이전트 워싱'이다.</p>
+          <div class="post-meta">
+            <span class="org">Gartner</span>
+            <span class="sep">·</span>
+            <span>2025년 6월</span>
+            <span class="sep">·</span>
+            <span>예측 (Predicts)</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="개별 보고서">개별 보고서</span>
+          <span class="tag">에이전트</span>
+          <span class="tag">거버넌스</span>
+          <span class="tag">AI 도입</span>
+          </div>
+        </li>
 
-    <li class="post-card"
-        data-tags="리서치 정리|ai 도입|roi|에이전트|조직 변화|인력"
-        data-search="BCG 기업 AI 조사 (2025~2026) 임원과 근로자를 따로 조사한다. 두 조사를 겹쳐 읽으면 경영진이 보고하는 성과와 현장이 겪는 현실 사이의 거리가 드러난다. Boston Consulting Group BCG AI at Work Build for the Future 근로자 조사 임원 조사 10-20-70 통합 2025 2026 AI 도입 ROI 에이전트 조직 변화 인력">
-      <h2><a href="posts/2025-2026-bcg-ai-research.html">BCG 기업 AI 조사 (2025~2026)</a></h2>
-      <p class="dek">임원과 근로자를 따로 조사한다. 두 조사를 겹쳐 읽으면 경영진이 보고하는 성과와 현장이 겪는 현실 사이의 거리가 드러난다.</p>
-      <div class="post-meta">
-        <span class="org">Boston Consulting Group</span>
-        <span class="sep">·</span>
-        <span>2025년 6월 ~ 2026년</span>
-        <span class="sep">·</span>
-        <span>보고서 4건</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">리서치 정리</span>
-        <span class="tag">AI 도입</span>
-        <span class="tag">ROI</span>
-        <span class="tag">에이전트</span>
-        <span class="tag">조직 변화</span>
-        <span class="tag">인력</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="보고서|ai 도입|에이전트|거버넌스|조직 변화"
+            data-search="Deloitte State of AI in the Enterprise 2026 24개국 리더 3,235명 조사. 에이전트가 가드레일보다 빠르게 확산되고 있다. 에이전틱 거버넌스가 성숙한 조직은 21%뿐이다. Deloitte Deloitte 딜로이트 State of AI in the Enterprise 2026 generative 거버넌스 21% 가드레일 human-agentic workforce 개별 보고서 AI 도입 에이전트 거버넌스 조직 변화">
+          <h2><a href="posts/2026-deloitte-state-of-ai-in-the-enterprise.html">Deloitte State of AI in the Enterprise 2026</a></h2>
+          <p class="dek">24개국 리더 3,235명 조사. 에이전트가 가드레일보다 빠르게 확산되고 있다. 에이전틱 거버넌스가 성숙한 조직은 21%뿐이다.</p>
+          <div class="post-meta">
+            <span class="org">Deloitte</span>
+            <span class="sep">·</span>
+            <span>2026년</span>
+            <span class="sep">·</span>
+            <span>24개국 3,235명</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="개별 보고서">개별 보고서</span>
+          <span class="tag">AI 도입</span>
+          <span class="tag">에이전트</span>
+          <span class="tag">거버넌스</span>
+          <span class="tag">조직 변화</span>
+          </div>
+        </li>
 
-    <li class="post-card"
-        data-tags="리서치 정리|ai 도입|에이전트|roi|거버넌스"
-        data-search="가트너 기업 AI 조사와 전망 (2025~2026) 설문과 함께 시점을 못 박은 예측을 내놓는다. 에이전트 배포는 17%인데 2년 내 배포 계획은 60%가 넘는다. Gartner Gartner 가트너 CIO Survey CEO Survey Hype Cycle 하이프 사이클 에이전트 워싱 예측 통합 2025 2026 AI 도입 에이전트 ROI 거버넌스">
-      <h2><a href="posts/2025-2026-gartner-ai-research.html">가트너 기업 AI 조사와 전망 (2025~2026)</a></h2>
-      <p class="dek">설문과 함께 시점을 못 박은 예측을 내놓는다. 에이전트 배포는 17%인데 2년 내 배포 계획은 60%가 넘는다.</p>
-      <div class="post-meta">
-        <span class="org">Gartner</span>
-        <span class="sep">·</span>
-        <span>2025년 6월 ~ 2026년 8월</span>
-        <span class="sep">·</span>
-        <span>자료 11건</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">리서치 정리</span>
-        <span class="tag">AI 도입</span>
-        <span class="tag">에이전트</span>
-        <span class="tag">ROI</span>
-        <span class="tag">거버넌스</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="보고서|ai 도입|에이전트|생산성|거버넌스"
+            data-search="Stanford HAI AI Index Report 2026 대학 연구기관이 내는 지표. 도입률 88%인데 에이전트 배포는 거의 모든 기능에서 한 자릿수에 머문다. Stanford HAI Stanford HAI AI Index 2026 스탠퍼드 88% WebArena 벤치마크 인시던트 부정확성 economy 개별 보고서 AI 도입 에이전트 생산성 거버넌스">
+          <h2><a href="posts/2026-stanford-hai-ai-index.html">Stanford HAI AI Index Report 2026</a></h2>
+          <p class="dek">대학 연구기관이 내는 지표. 도입률 88%인데 에이전트 배포는 거의 모든 기능에서 한 자릿수에 머문다.</p>
+          <div class="post-meta">
+            <span class="org">Stanford HAI</span>
+            <span class="sep">·</span>
+            <span>2026년</span>
+            <span class="sep">·</span>
+            <span>연례 지표 보고서</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="개별 보고서">개별 보고서</span>
+          <span class="tag">AI 도입</span>
+          <span class="tag">에이전트</span>
+          <span class="tag">생산성</span>
+          <span class="tag">거버넌스</span>
+          </div>
+        </li>
 
-    <li class="post-card"
-        data-tags="리서치 정리|ai 도입|에이전트|거버넌스|조직 변화"
-        data-search="딜로이트 기업 AI 조사 (2025~2026) 분기 단위로 내던 조사를 연간 판으로 정리했다. 관통하는 메시지는 에이전트가 통제 체계보다 빠르다는 것이다. Deloitte Deloitte 딜로이트 State of AI in the Enterprise generative 거버넌스 통합 2025 2026 AI 도입 에이전트 거버넌스 조직 변화">
-      <h2><a href="posts/2025-2026-deloitte-ai-research.html">딜로이트 기업 AI 조사 (2025~2026)</a></h2>
-      <p class="dek">분기 단위로 내던 조사를 연간 판으로 정리했다. 관통하는 메시지는 에이전트가 통제 체계보다 빠르다는 것이다.</p>
-      <div class="post-meta">
-        <span class="org">Deloitte</span>
-        <span class="sep">·</span>
-        <span>2025년 ~ 2026년</span>
-        <span class="sep">·</span>
-        <span>보고서 2건</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">리서치 정리</span>
-        <span class="tag">AI 도입</span>
-        <span class="tag">에이전트</span>
-        <span class="tag">거버넌스</span>
-        <span class="tag">조직 변화</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="보고서|ai 도입|roi|에이전트|조직 변화"
+            data-search="IBM CEO Study 2025 33개국 CEO 2,000명 조사. AI 이니셔티브의 25%만 기대한 ROI를 냈고 16%만 전사 확장에 성공했다. IBM Institute for Business Value IBM CEO Study 2025 Institute for Business Value IBV 25% 16% 29% ROI 측정 옥스퍼드 개별 보고서 AI 도입 ROI 에이전트 조직 변화">
+          <h2><a href="posts/2025-05-ibm-ceo-study.html">IBM CEO Study 2025</a></h2>
+          <p class="dek">33개국 CEO 2,000명 조사. AI 이니셔티브의 25%만 기대한 ROI를 냈고 16%만 전사 확장에 성공했다.</p>
+          <div class="post-meta">
+            <span class="org">IBM Institute for Business Value</span>
+            <span class="sep">·</span>
+            <span>2025년 5월</span>
+            <span class="sep">·</span>
+            <span>옥스퍼드 이코노믹스 협력</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="개별 보고서">개별 보고서</span>
+          <span class="tag">AI 도입</span>
+          <span class="tag">ROI</span>
+          <span class="tag">에이전트</span>
+          <span class="tag">조직 변화</span>
+          </div>
+        </li>
 
-    <li class="post-card"
-        data-tags="리서치 정리|ai 도입|roi|조직 변화|에이전트"
-        data-search="IBM 기업 AI 조사 (2025~2026) 2025년은 ROI가 왜 안 나오는가였고 2026년은 누가 책임지는가였다. 최고 AI 책임자가 26%에서 76%로 늘었다. IBM Institute for Business Value IBM CEO Study Institute for Business Value IBV chief AI officer CAIO 통합 2025 2026 AI 도입 ROI 조직 변화 에이전트">
-      <h2><a href="posts/2025-2026-ibm-ai-research.html">IBM 기업 AI 조사 (2025~2026)</a></h2>
-      <p class="dek">2025년은 ROI가 왜 안 나오는가였고 2026년은 누가 책임지는가였다. 최고 AI 책임자가 26%에서 76%로 늘었다.</p>
-      <div class="post-meta">
-        <span class="org">IBM Institute for Business Value</span>
-        <span class="sep">·</span>
-        <span>2025년 5월 ~ 2026년 5월</span>
-        <span class="sep">·</span>
-        <span>보고서 2건</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">리서치 정리</span>
-        <span class="tag">AI 도입</span>
-        <span class="tag">ROI</span>
-        <span class="tag">조직 변화</span>
-        <span class="tag">에이전트</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="보고서|조직 변화|ai 도입|roi|거버넌스"
+            data-search="IBM CEO Study 2026 최고 AI 책임자를 둔 기업이 1년 만에 26%에서 76%로 늘었다. 그 자리를 둔 기업의 AI 투자 수익률이 5% 더 높았다. IBM Institute for Business Value IBM CEO Study 2026 chief AI officer CAIO 최고 AI 책임자 76% C-suite AI 주권 sovereignty 개별 보고서 조직 변화 AI 도입 ROI 거버넌스">
+          <h2><a href="posts/2026-05-ibm-ceo-study.html">IBM CEO Study 2026</a></h2>
+          <p class="dek">최고 AI 책임자를 둔 기업이 1년 만에 26%에서 76%로 늘었다. 그 자리를 둔 기업의 AI 투자 수익률이 5% 더 높았다.</p>
+          <div class="post-meta">
+            <span class="org">IBM Institute for Business Value</span>
+            <span class="sep">·</span>
+            <span>2026년 5월</span>
+            <span class="sep">·</span>
+            <span>33개국 2,000명</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="개별 보고서">개별 보고서</span>
+          <span class="tag">조직 변화</span>
+          <span class="tag">AI 도입</span>
+          <span class="tag">ROI</span>
+          <span class="tag">거버넌스</span>
+          </div>
+        </li>
 
-    <li class="post-card"
-        data-tags="리서치 정리|인력|에이전트|생산성|조직 변화"
-        data-search="마이크로소프트 업무 트렌드 조사 (2025~2026) 조직 구조와 개인의 일하는 방식이 어떻게 바뀌는가를 묻는다. 설문에 실제 제품 사용 신호를 결합한다. Microsoft &amp; LinkedIn Microsoft LinkedIn Work Trend Index 마이크로소프트 링크드인 Frontier Firm 재량 통합 2025 2026 인력 에이전트 생산성 조직 변화">
-      <h2><a href="posts/2025-2026-microsoft-work-trend-index.html">마이크로소프트 업무 트렌드 조사 (2025~2026)</a></h2>
-      <p class="dek">조직 구조와 개인의 일하는 방식이 어떻게 바뀌는가를 묻는다. 설문에 실제 제품 사용 신호를 결합한다.</p>
-      <div class="post-meta">
-        <span class="org">Microsoft &amp; LinkedIn</span>
-        <span class="sep">·</span>
-        <span>2025년 4월 ~ 2026년 5월</span>
-        <span class="sep">·</span>
-        <span>보고서 2건</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">리서치 정리</span>
-        <span class="tag">인력</span>
-        <span class="tag">에이전트</span>
-        <span class="tag">생산성</span>
-        <span class="tag">조직 변화</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="보고서|인력|에이전트|조직 변화|생산성"
+            data-search="Microsoft Work Trend Index 2025 사람과 에이전트가 함께 일하는 '프론티어 기업'을 제시했다. 이곳 직원의 71%가 회사가 잘 나간다고 답했고 전체 평균은 37%였다. Microsoft &amp; LinkedIn Microsoft LinkedIn Work Trend Index 2025 마이크로소프트 링크드인 Frontier Firm 프론티어 기업 에이전트 개별 보고서 인력 에이전트 조직 변화 생산성">
+          <h2><a href="posts/2025-04-microsoft-work-trend-index.html">Microsoft Work Trend Index 2025</a></h2>
+          <p class="dek">사람과 에이전트가 함께 일하는 '프론티어 기업'을 제시했다. 이곳 직원의 71%가 회사가 잘 나간다고 답했고 전체 평균은 37%였다.</p>
+          <div class="post-meta">
+            <span class="org">Microsoft &amp; LinkedIn</span>
+            <span class="sep">·</span>
+            <span>2025년 4월</span>
+            <span class="sep">·</span>
+            <span>31개국 31,000명</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="개별 보고서">개별 보고서</span>
+          <span class="tag">인력</span>
+          <span class="tag">에이전트</span>
+          <span class="tag">조직 변화</span>
+          <span class="tag">생산성</span>
+          </div>
+        </li>
 
-    <li class="post-card"
-        data-tags="리서치 정리|에이전트|ai 도입|roi"
-        data-search="KPMG 기업 AI 조사 (2025~2026) 유일한 분기 단위 추적 조사. 다만 배포 기준이 느슨해 같은 시기 가트너의 17%와 KPMG의 54%가 함께 존재한다. KPMG KPMG AI Quarterly Pulse Survey 분기 추적 에이전트 배포 통합 2025 2026 에이전트 AI 도입 ROI">
-      <h2><a href="posts/2025-2026-kpmg-ai-research.html">KPMG 기업 AI 조사 (2025~2026)</a></h2>
-      <p class="dek">유일한 분기 단위 추적 조사. 다만 배포 기준이 느슨해 같은 시기 가트너의 17%와 KPMG의 54%가 함께 존재한다.</p>
-      <div class="post-meta">
-        <span class="org">KPMG</span>
-        <span class="sep">·</span>
-        <span>2025년 ~ 2026년</span>
-        <span class="sep">·</span>
-        <span>분기 조사 8회 이상</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">리서치 정리</span>
-        <span class="tag">에이전트</span>
-        <span class="tag">AI 도입</span>
-        <span class="tag">ROI</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="보고서|인력|에이전트|생산성|조직 변화"
+            data-search="Microsoft Work Trend Index 2026 마이크로소프트 365 활성 에이전트가 전년 대비 15배 늘었다. 에이전트가 실행을 맡을수록 사람의 재량이 커진다는 '새로운 재량 방정식'. Microsoft Microsoft Work Trend Index 2026 마이크로소프트 human agency 재량 15배 Frontier Professional 58% 개별 보고서 인력 에이전트 생산성 조직 변화">
+          <h2><a href="posts/2026-05-microsoft-work-trend-index.html">Microsoft Work Trend Index 2026</a></h2>
+          <p class="dek">마이크로소프트 365 활성 에이전트가 전년 대비 15배 늘었다. 에이전트가 실행을 맡을수록 사람의 재량이 커진다는 '새로운 재량 방정식'.</p>
+          <div class="post-meta">
+            <span class="org">Microsoft</span>
+            <span class="sep">·</span>
+            <span>2026년 5월</span>
+            <span class="sep">·</span>
+            <span>10개 시장 20,000명</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="개별 보고서">개별 보고서</span>
+          <span class="tag">인력</span>
+          <span class="tag">에이전트</span>
+          <span class="tag">생산성</span>
+          <span class="tag">조직 변화</span>
+          </div>
+        </li>
 
-    <li class="post-card"
-        data-tags="리서치 정리|ai 도입|roi|에이전트|생산성|인력|거버넌스"
-        data-search="기업 AI 도입 현황 비교 (2025~2026) 여러 기관이 다른 표본과 방법으로 조사했는데도 결론은 한 곳으로 모인다. 어디서 겹치고 어디서 갈리는지 수치를 나란히 놓고 비교했다. McKinsey · PwC · BCG · Gartner 외 맥킨지 McKinsey PwC BCG 가트너 Gartner Deloitte 딜로이트 IBM Microsoft KPMG Stanford Wharton Menlo EY WEF 비교 교차 분석 AI 도입 ROI 에이전트 생산성 인력 거버넌스">
-      <h2><a href="posts/2025-2026-enterprise-ai-adoption-research.html">기업 AI 도입 현황 비교 (2025~2026)</a></h2>
-      <p class="dek">여러 기관이 다른 표본과 방법으로 조사했는데도 결론은 한 곳으로 모인다. 어디서 겹치고 어디서 갈리는지 수치를 나란히 놓고 비교했다.</p>
-      <div class="post-meta">
-        <span class="org">McKinsey · PwC · BCG · Gartner 외</span>
-        <span class="sep">·</span>
-        <span>2025년 1월 ~ 2026년 9월</span>
-        <span class="sep">·</span>
-        <span>기관 13곳 비교</span>
-      </div>
-      <div class="tags">
-        <span class="tag tag-type">리서치 정리</span>
-        <span class="tag">AI 도입</span>
-        <span class="tag">ROI</span>
-        <span class="tag">에이전트</span>
-        <span class="tag">생산성</span>
-        <span class="tag">인력</span>
-        <span class="tag">거버넌스</span>
-      </div>
-    </li>
+        <li class="post-card"
+            data-tags="보고서|에이전트|ai 도입|roi"
+            data-search="KPMG AI Quarterly Pulse Survey 유일한 분기 단위 추적 조사. 에이전트 배포가 두 분기 만에 11%에서 42%로 뛰었고 이후 54%까지 올랐다. KPMG KPMG AI Quarterly Pulse Survey 분기 에이전트 배포 42% 54% build buy 혼합 역량 격차 92% 개별 보고서 에이전트 AI 도입 ROI">
+          <h2><a href="posts/2026-kpmg-ai-quarterly-pulse-survey.html">KPMG AI Quarterly Pulse Survey</a></h2>
+          <p class="dek">유일한 분기 단위 추적 조사. 에이전트 배포가 두 분기 만에 11%에서 42%로 뛰었고 이후 54%까지 올랐다.</p>
+          <div class="post-meta">
+            <span class="org">KPMG</span>
+            <span class="sep">·</span>
+            <span>2025~2026년</span>
+            <span class="sep">·</span>
+            <span>분기 추적</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="개별 보고서">개별 보고서</span>
+          <span class="tag">에이전트</span>
+          <span class="tag">AI 도입</span>
+          <span class="tag">ROI</span>
+          </div>
+        </li>
 
-  </ul>
+        <li class="post-card"
+            data-tags="보고서|ai 도입|roi|생산성"
+            data-search="Wharton–GBK AI Adoption Report 2025 다른 기관보다 훨씬 밝은 그림을 보여준다. 리더의 4분의 3이 긍정적 수익을 봤다고 답했고 72%가 ROI를 공식 측정한다. Wharton Human-AI Research &amp; GBK Wharton GBK 와튼 AI Adoption Report 2025 accountable acceleration 82% 72% ROI 예산 개별 보고서 AI 도입 ROI 생산성">
+          <h2><a href="posts/2025-10-wharton-gbk-ai-adoption-report.html">Wharton–GBK AI Adoption Report 2025</a></h2>
+          <p class="dek">다른 기관보다 훨씬 밝은 그림을 보여준다. 리더의 4분의 3이 긍정적 수익을 봤다고 답했고 72%가 ROI를 공식 측정한다.</p>
+          <div class="post-meta">
+            <span class="org">Wharton Human-AI Research &amp; GBK</span>
+            <span class="sep">·</span>
+            <span>2025년 10월</span>
+            <span class="sep">·</span>
+            <span>3차 연례 조사</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="개별 보고서">개별 보고서</span>
+          <span class="tag">AI 도입</span>
+          <span class="tag">ROI</span>
+          <span class="tag">생산성</span>
+          </div>
+        </li>
+
+        <li class="post-card"
+            data-tags="보고서|ai 도입|시장"
+            data-search="Menlo Ventures State of Generative AI 2025 기업 AI 지출이 1년 만에 세 배 늘어 370억 달러에 이르렀다. 모델 공급자별 점유율 변화도 함께 추적한다. Menlo Ventures Menlo Ventures 멘로 벤처스 State of Generative AI 2025 37B 370억 Anthropic OpenAI 점유율 LLM 지출 개별 보고서 AI 도입 시장">
+          <h2><a href="posts/2025-12-menlo-ventures-state-of-genai.html">Menlo Ventures State of Generative AI 2025</a></h2>
+          <p class="dek">기업 AI 지출이 1년 만에 세 배 늘어 370억 달러에 이르렀다. 모델 공급자별 점유율 변화도 함께 추적한다.</p>
+          <div class="post-meta">
+            <span class="org">Menlo Ventures</span>
+            <span class="sep">·</span>
+            <span>2025년 12월</span>
+            <span class="sep">·</span>
+            <span>벤처캐피털 시장 보고서</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="개별 보고서">개별 보고서</span>
+          <span class="tag">AI 도입</span>
+          <span class="tag">시장</span>
+          </div>
+        </li>
+
+        <li class="post-card"
+            data-tags="보고서|roi|에이전트|ai 도입"
+            data-search="Google Cloud ROI of AI 2025 · 2026 다른 기관이 성과를 낸 소수를 5~6%로 볼 때 이 조사는 74%가 1년 안에 ROI를 봤다고 보고한다. 왜 다른지가 읽는 핵심이다. Google Cloud Google Cloud ROI of AI 2025 2026 구글 클라우드 74% 52% 에이전트 배포 84% 책임 소재 개별 보고서 ROI 에이전트 AI 도입">
+          <h2><a href="posts/2025-2026-google-cloud-roi-of-ai.html">Google Cloud ROI of AI 2025 · 2026</a></h2>
+          <p class="dek">다른 기관이 성과를 낸 소수를 5~6%로 볼 때 이 조사는 74%가 1년 안에 ROI를 봤다고 보고한다. 왜 다른지가 읽는 핵심이다.</p>
+          <div class="post-meta">
+            <span class="org">Google Cloud</span>
+            <span class="sep">·</span>
+            <span>2025년 9월 · 2026년 7월</span>
+            <span class="sep">·</span>
+            <span>임원 설문</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="개별 보고서">개별 보고서</span>
+          <span class="tag">ROI</span>
+          <span class="tag">에이전트</span>
+          <span class="tag">AI 도입</span>
+          </div>
+        </li>
+
+        <li class="post-card"
+            data-tags="보고서|roi|인력|거버넌스|에이전트"
+            data-search="EY AI Pulse Survey AI로 얻은 생산성 향상분이 감원이 아니라 재투자로 흐른다. 2026년에는 토큰 비용 급등으로 재무 점검이 시작됐다. EY EY AI Pulse Survey 97% 재투자 reinvestment 토큰 비용 token cost 책임 있는 AI responsible governance 개별 보고서 ROI 인력 거버넌스 에이전트">
+          <h2><a href="posts/2025-2026-ey-ai-pulse-survey.html">EY AI Pulse Survey</a></h2>
+          <p class="dek">AI로 얻은 생산성 향상분이 감원이 아니라 재투자로 흐른다. 2026년에는 토큰 비용 급등으로 재무 점검이 시작됐다.</p>
+          <div class="post-meta">
+            <span class="org">EY</span>
+            <span class="sep">·</span>
+            <span>2025~2026년</span>
+            <span class="sep">·</span>
+            <span>경영진 펄스 설문</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="개별 보고서">개별 보고서</span>
+          <span class="tag">ROI</span>
+          <span class="tag">인력</span>
+          <span class="tag">거버넌스</span>
+          <span class="tag">에이전트</span>
+          </div>
+        </li>
+
+        <li class="post-card"
+            data-tags="보고서|인력|생산성|ai 도입"
+            data-search="WEF Future of Jobs Report 2025 2030년까지 1억 7천만 개가 생기고 9천 2백만 개가 사라진다. 고용주가 꼽은 최대 장벽은 역량 격차였다. World Economic Forum WEF World Economic Forum Future of Jobs 2025 세계경제포럼 일자리 1억 7천만 역량 격차 63% 재교육 개별 보고서 인력 생산성 AI 도입">
+          <h2><a href="posts/2025-01-wef-future-of-jobs-report.html">WEF Future of Jobs Report 2025</a></h2>
+          <p class="dek">2030년까지 1억 7천만 개가 생기고 9천 2백만 개가 사라진다. 고용주가 꼽은 최대 장벽은 역량 격차였다.</p>
+          <div class="post-meta">
+            <span class="org">World Economic Forum</span>
+            <span class="sep">·</span>
+            <span>2025년 1월</span>
+            <span class="sep">·</span>
+            <span>격년 노동시장 전망</span>
+          </div>
+          <div class="tags">
+            <span class="tag tag-layer" data-layer="개별 보고서">개별 보고서</span>
+          <span class="tag">인력</span>
+          <span class="tag">생산성</span>
+          <span class="tag">AI 도입</span>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+  </div>
 
   <div class="empty-state" id="empty-state" hidden>조건에 맞는 글이 없습니다.</div>
 
