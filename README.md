@@ -37,38 +37,3 @@
 | [The GenAI Divide](docs/posts/2025-07-mit-nanda-genai-divide.html) | MIT Media Lab · Project NANDA | 2025-07 | 보고서 |
 | [The Widening AI Value Gap](docs/posts/2025-09-bcg-widening-ai-value-gap.html) | Boston Consulting Group | 2025-09 | 보고서 |
 | [기업 AI 도입 현황 리서치 정리](docs/posts/2025-2026-enterprise-ai-adoption-research.html) | McKinsey · PwC · BCG · Gartner | 2025-01 ~ 2026-09 | 리서치 정리 |
-
----
-
-## 저장소 구조
-
-```
-docs/
-  index.html          목록 페이지 (검색 · 태그 필터)
-  assets/
-    style.css         공통 스타일 (라이트 · 다크 테마)
-    site.js           테마 전환, 목록 검색과 필터
-  posts/
-    _TEMPLATE.html    새 글 템플릿
-    *.html            글 하나당 파일 하나
-AGENT.md              작업 지시사항과 원칙
-README.md             이 문서
-```
-
-빌드 도구나 의존성이 없는 정적 HTML입니다. 로컬에서 보려면 `docs/index.html`을 브라우저로 열면 됩니다.
-
-### GitHub Pages 설정
-
-저장소 **Settings → Pages** 에서 지정합니다.
-
-| 항목 | 값 |
-| --- | --- |
-| Source | Deploy from a branch |
-| Branch | `main` |
-| Folder | `/docs` |
-
----
-
-## 새 글 추가
-
-새 글을 정리해 추가하는 절차와 지켜야 할 원칙은 **[AGENT.md](AGENT.md)** 에 있습니다. 파일 명명 규칙, 글 문서 구조, 태그 규칙, 검증 항목을 담고 있습니다.
