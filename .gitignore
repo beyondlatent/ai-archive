@@ -3,3 +3,6 @@ Thumbs.db
 *.log
 .vscode/
 .idea/
+
+# git bundle 등 로컬 산출물
+*.bundle
