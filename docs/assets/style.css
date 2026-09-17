@@ -15,7 +15,7 @@
   --accent-soft: #fdf3e7;
   --accent-border: #f0d9bd;
   --link: #9a4707;
-  /* 계층별 색 — 교차 비교 · 기관별 통합 · 개별 보고서 */
+  /* 계층별 색 — 통합 전망 · 기관 종합 · 개별 보고서 */
   --layer-compare-bg: #eef2fb;
   --layer-compare-fg: #3a5a9b;
   --layer-compare-bd: #ccd8ef;
@@ -401,7 +401,7 @@ tbody th[scope="row"] { min-width: 8rem; }
 }
 
 /* ==========================================================================
-   계층 구분 — 교차 비교 · 기관별 통합 · 개별 보고서
+   계층 구분 — 통합 전망 · 기관 종합 · 개별 보고서
    ========================================================================== */
 
 /* 계층 배지 (카드와 본문 머리말 공용) */
@@ -411,12 +411,12 @@ tbody th[scope="row"] { min-width: 8rem; }
   border-color: var(--layer-report-bd);
   color: var(--layer-report-fg);
 }
-.tag-layer[data-layer="교차 비교"] {
+.tag-layer[data-layer="통합 전망"] {
   background: var(--layer-compare-bg);
   border-color: var(--layer-compare-bd);
   color: var(--layer-compare-fg);
 }
-.tag-layer[data-layer="기관별 통합"] {
+.tag-layer[data-layer="기관 종합"] {
   background: var(--layer-org-bg);
   border-color: var(--layer-org-bd);
   color: var(--layer-org-fg);
@@ -425,10 +425,10 @@ tbody th[scope="row"] { min-width: 8rem; }
 /* 필터 줄 — 계층과 주제를 분리 */
 .filter-row { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; }
 .filter-row + .filter-row { margin-top: 8px; }
-.chip-layer[aria-pressed="true"][data-filter="교차 비교"] {
+.chip-layer[aria-pressed="true"][data-filter="통합 전망"] {
   background: var(--layer-compare-bg); border-color: var(--layer-compare-bd); color: var(--layer-compare-fg);
 }
-.chip-layer[aria-pressed="true"][data-filter="기관별 통합"] {
+.chip-layer[aria-pressed="true"][data-filter="기관 종합"] {
   background: var(--layer-org-bg); border-color: var(--layer-org-bd); color: var(--layer-org-fg);
 }
 
@@ -449,27 +449,14 @@ tbody th[scope="row"] { min-width: 8rem; }
   content: ""; width: 9px; height: 9px; border-radius: 3px; flex: none;
   background: var(--layer-report-fg);
 }
-.layer-group[data-layer="교차 비교"] .layer-head h2::before { background: var(--layer-compare-fg); }
-.layer-group[data-layer="기관별 통합"] .layer-head h2::before { background: var(--layer-org-fg); }
+.layer-group[data-layer="통합 전망"] .layer-head h2::before { background: var(--layer-compare-fg); }
+.layer-group[data-layer="기관 종합"] .layer-head h2::before { background: var(--layer-org-fg); }
 .layer-head .count {
   font-size: 13px; color: var(--text-faint); font-variant-numeric: tabular-nums;
 }
 .layer-head .layer-desc {
   flex: 1 1 100%; margin: 2px 0 0; font-size: 13.5px; color: var(--text-muted);
 }
-
-/* 시작점 안내 */
-.start-here {
-  display: flex; align-items: center; flex-wrap: wrap; gap: 6px 10px;
-  border: 1px solid var(--layer-compare-bd); background: var(--layer-compare-bg);
-  border-radius: var(--radius); padding: 13px 18px; margin: 20px 0 0;
-  font-size: 14.5px; color: var(--text);
-}
-.start-here .label {
-  font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
-  color: var(--layer-compare-fg);
-}
-.start-here a { font-weight: 650; color: var(--layer-compare-fg); }
 
 @media (max-width: 560px) {
   .layer-group + .layer-group { margin-top: 30px; }
@@ -505,8 +492,8 @@ tbody th[scope="row"] { min-width: 8rem; }
   width: 8px; height: 8px; border-radius: 3px; flex: none;
   background: var(--border-strong);
 }
-.layer-tab[data-layer="교차 비교"] .dot { background: var(--layer-compare-fg); }
-.layer-tab[data-layer="기관별 통합"] .dot { background: var(--layer-org-fg); }
+.layer-tab[data-layer="통합 전망"] .dot { background: var(--layer-compare-fg); }
+.layer-tab[data-layer="기관 종합"] .dot { background: var(--layer-org-fg); }
 .layer-tab[data-layer="개별 보고서"] .dot { background: var(--layer-report-fg); }
 .layer-tab[data-layer="전체"] .dot {
   background: linear-gradient(135deg, var(--layer-compare-fg) 0 33%,
@@ -520,10 +507,10 @@ tbody th[scope="row"] { min-width: 8rem; }
 .layer-tab[aria-pressed="true"] .n {
   background: var(--bg-sunken); color: var(--text-muted);
 }
-.layer-tab[aria-pressed="true"][data-layer="교차 비교"] {
+.layer-tab[aria-pressed="true"][data-layer="통합 전망"] {
   background: var(--layer-compare-bg); border-color: var(--layer-compare-bd); color: var(--layer-compare-fg);
 }
-.layer-tab[aria-pressed="true"][data-layer="기관별 통합"] {
+.layer-tab[aria-pressed="true"][data-layer="기관 종합"] {
   background: var(--layer-org-bg); border-color: var(--layer-org-bd); color: var(--layer-org-fg);
 }
 .layer-tab[aria-pressed="true"][data-layer="개별 보고서"] {
