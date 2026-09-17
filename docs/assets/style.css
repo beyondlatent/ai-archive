@@ -223,10 +223,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   border: 1px solid var(--border); color: var(--text-muted); background: var(--bg-sunken);
   position: relative; z-index: 1;
 }
-.tag-type {
-  background: var(--accent-soft); border-color: var(--accent-border); color: var(--accent);
-  font-weight: 600;
-}
 .empty-state {
   text-align: center; padding: 48px 16px; color: var(--text-faint); font-size: 15px;
   border: 1px dashed var(--border); border-radius: var(--radius); margin-top: 18px;
@@ -425,12 +421,6 @@ tbody th[scope="row"] { min-width: 8rem; }
 /* 필터 줄 — 계층과 주제를 분리 */
 .filter-row { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; }
 .filter-row + .filter-row { margin-top: 8px; }
-.chip-layer[aria-pressed="true"][data-filter="통합 전망"] {
-  background: var(--layer-compare-bg); border-color: var(--layer-compare-bd); color: var(--layer-compare-fg);
-}
-.chip-layer[aria-pressed="true"][data-filter="기관 종합"] {
-  background: var(--layer-org-bg); border-color: var(--layer-org-bd); color: var(--layer-org-fg);
-}
 
 /* 목록 구역 */
 .layer-group { margin: 0; }
@@ -527,4 +517,10 @@ tbody th[scope="row"] { min-width: 8rem; }
   .layer-nav { gap: 4px; padding: 4px; }
   .layer-tab { flex: 1 1 calc(50% - 4px); padding: 9px 8px; font-size: 13.5px; }
   .layer-tab .name { white-space: normal; }
+}
+
+/* 표의 행 머리말에 붙는 부가 설명 (기관 성격 등) */
+.t-key .sub {
+  display: inline-block; margin-top: 2px;
+  font-size: 12px; font-weight: 400; color: var(--text-faint);
 }
