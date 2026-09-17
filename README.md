@@ -14,9 +14,9 @@
 | --- | --- | --- | --- |
 | 🔵 | **통합 전망** | 여러 기관의 수치를 나란히 놓고 비교 | 1 |
 | 🟢 | **기관 종합** | 한 기관이 2025~2026년에 낸 보고서를 한 흐름으로 | 8 |
-| 🟠 | **개별 보고서** | 보고서 한 편씩. 원문 링크와 조사 방법, 한계까지 | 20 |
+| 🟠 | **개별 보고서** | 보고서 한 편씩. 원문 링크와 조사 방법, 한계까지 | 23 |
 
-목록은 **원문 발행일 최신순**으로 정렬합니다. 저장소에 언제 추가했는지가 아니라 보고서가 언제 나왔는지를 기준으로 삼습니다.
+목록은 **원문 발행일 최신순**으로 정렬합니다. 새 보고서가 나오면 주기적으로 검색해 추가합니다. 마지막 갱신은 2026-09-17입니다.
 
 ---
 
@@ -37,6 +37,7 @@
 <sub>회계·컨설팅</sub>
 
 - `2026-06` [PwC Global AI Jobs Barometer 2026](docs/posts/2026-06-pwc-ai-jobs-barometer-2026.html)
+- `2026-04` [PwC 2026 AI Performance Study](docs/posts/2026-04-pwc-ai-performance-study.html)
 - `2026-01` [PwC 29th Global CEO Survey](docs/posts/2026-01-pwc-global-ceo-survey-29th.html)
 - 🗂 **종합 정리:** [PwC 기업 AI 조사 (2025~2026)](docs/posts/2025-2026-pwc-ai-research.html)
 
@@ -54,6 +55,7 @@
 
 <sub>리서치</sub>
 
+- `2026-07` [가트너 에이전틱 AI와 SaaS 지출 2,340억 달러](docs/posts/2026-07-gartner-agentic-saas-spend-at-risk.html)
 - `2025-06` [가트너 에이전틱 AI 프로젝트 취소 전망](docs/posts/2025-06-gartner-agentic-ai-project-cancellations.html)
 - 🗂 **종합 정리:** [가트너 기업 AI 조사와 전망 (2025~2026)](docs/posts/2025-2026-gartner-ai-research.html)
 
@@ -77,6 +79,7 @@
 <sub>컨설팅</sub>
 
 - `2026-06` [BCG AI at Work 2026](docs/posts/2026-06-bcg-ai-at-work-2026.html)
+- `2026-01` [BCG AI Radar 2026](docs/posts/2026-01-bcg-ai-radar.html)
 - `2025-09` [The Widening AI Value Gap](docs/posts/2025-09-bcg-widening-ai-value-gap.html)
 - 🗂 **종합 정리:** [BCG 기업 AI 조사 (2025~2026)](docs/posts/2025-2026-bcg-ai-research.html)
 
