@@ -28,31 +28,61 @@
     btn.setAttribute("title", dark ? "밝은 테마로 전환" : "어두운 테마로 전환");
   }
 
-  /* ---------- 목록 검색 / 필터 ---------- */
+  /* ---------- 목록: 계층 메뉴 + 검색 + 주제 필터 ---------- */
   function initList() {
     var root = document.getElementById("post-groups");
     if (!root) return;
+
     var groups = Array.prototype.slice.call(root.querySelectorAll(".layer-group"));
     var cards = Array.prototype.slice.call(root.querySelectorAll(".post-card"));
     var search = document.getElementById("search");
+    var tabs = Array.prototype.slice.call(document.querySelectorAll(".layer-tab[data-layer-filter]"));
     var chips = Array.prototype.slice.call(document.querySelectorAll(".chip[data-filter]"));
     var empty = document.getElementById("empty-state");
     var count = document.getElementById("result-count");
-    var active = "all";
+
+    // 계층과 주제는 서로 독립된 축이다.
+    var activeLayer = "all";
+    var activeTopic = "all";
+
+    function tagsOf(card) {
+      return (card.getAttribute("data-tags") || "").toLowerCase().split("|");
+    }
+    function matchesSearch(card, q) {
+      if (!q) return true;
+      return (card.getAttribute("data-search") || "").toLowerCase().indexOf(q) !== -1;
+    }
+    function matchesTopic(card) {
+      return activeTopic === "all" || tagsOf(card).indexOf(activeTopic) !== -1;
+    }
+    function matchesLayer(card, layer) {
+      return layer === "all" || tagsOf(card).indexOf(layer.toLowerCase()) !== -1;
+    }
 
     function apply() {
       var q = (search && search.value ? search.value : "").trim().toLowerCase();
       var shown = 0;
+
       cards.forEach(function (card) {
-        var haystack = (card.getAttribute("data-search") || "").toLowerCase();
-        var tags = (card.getAttribute("data-tags") || "").toLowerCase();
-        var matchQ = !q || haystack.indexOf(q) !== -1;
-        var matchF = active === "all" || tags.split("|").indexOf(active) !== -1;
-        var ok = matchQ && matchF;
+        var ok = matchesSearch(card, q) && matchesTopic(card) && matchesLayer(card, activeLayer);
         card.hidden = !ok;
         if (ok) shown++;
       });
-      // 비어 버린 구역은 제목까지 함께 숨긴다
+
+      // 계층 메뉴의 편수는 계층 선택을 뺀 나머지 조건으로 센다.
+      // 그래야 다른 계층에 몇 편이 남아 있는지 보인다.
+      tabs.forEach(function (tab) {
+        var layer = tab.getAttribute("data-layer-filter");
+        var n = cards.filter(function (card) {
+          return matchesSearch(card, q) && matchesTopic(card) && matchesLayer(card, layer);
+        }).length;
+        var el = tab.querySelector(".n");
+        if (el) el.textContent = String(n);
+        tab.setAttribute("data-count", String(n));
+        tab.setAttribute("aria-pressed", String(layer === activeLayer));
+      });
+
+      // 비어 버린 구역은 제목까지 함께 숨긴다.
       groups.forEach(function (g) {
         var visible = Array.prototype.filter.call(
           g.querySelectorAll(".post-card"), function (c) { return !c.hidden; }
@@ -61,20 +91,34 @@
         var c = g.querySelector(".count");
         if (c) c.textContent = visible.length + "편";
       });
+
+      chips.forEach(function (c) {
+        c.setAttribute("aria-pressed", String(c.getAttribute("data-filter") === activeTopic));
+      });
+
       if (empty) empty.hidden = shown !== 0;
       if (count) count.textContent = String(shown);
     }
 
     if (search) search.addEventListener("input", apply);
-    chips.forEach(function (chip) {
-      chip.addEventListener("click", function () {
-        active = chip.getAttribute("data-filter") || "all";
-        chips.forEach(function (c) {
-          c.setAttribute("aria-pressed", String(c === chip));
-        });
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        var v = tab.getAttribute("data-layer-filter");
+        // 선택된 계층을 다시 누르면 전체로 돌아간다.
+        activeLayer = (v === activeLayer && v !== "all") ? "all" : v;
         apply();
       });
     });
+
+    chips.forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        var v = chip.getAttribute("data-filter") || "all";
+        activeTopic = (v === activeTopic && v !== "all") ? "all" : v;
+        apply();
+      });
+    });
+
     apply();
   }
 
