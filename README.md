@@ -16,7 +16,7 @@
 | 🟢 | **기관 종합** | 한 기관이 2025~2026년에 낸 보고서를 한 흐름으로 | 8 |
 | 🟠 | **개별 보고서** | 보고서 한 편씩. 원문 링크와 조사 방법, 한계까지 | 23 |
 
-목록은 **원문 발행일 최신순**으로 정렬합니다. **매월 1일과 15일에 새 보고서를 검색해 자동으로 추가**하고 기존 페이지를 갱신합니다. 마지막 갱신은 2026-09-17입니다.
+목록은 **원문 발행일 최신순**으로 정렬합니다. **매월 1일과 15일에 새 보고서를 검색해 자동으로 추가**하고 기존 페이지를 갱신합니다. 마지막 갱신은 2026-10-01입니다.
 
 ---
 
@@ -31,6 +31,14 @@
 ## 🟢 기관 종합 · 🟠 개별 보고서
 
 기관별로 묶었고, 최근에 보고서를 낸 기관이 위에 옵니다. 보고서가 둘 이상인 기관에는 종합 정리가 함께 있습니다.
+
+### KPMG
+
+<sub>회계·컨설팅</sub>
+
+- `2026-09` [KPMG AI Quarterly Pulse Survey](docs/posts/2026-kpmg-ai-quarterly-pulse-survey.html)
+- 🗂 **종합 정리:** [KPMG 기업 AI 조사 (2025~2026)](docs/posts/2025-2026-kpmg-ai-research.html)
+
 
 ### PwC
 
@@ -107,14 +115,6 @@
 <sub>대학</sub>
 
 - `2026-04` [Stanford HAI AI Index Report 2026](docs/posts/2026-stanford-hai-ai-index.html)
-
-
-### KPMG
-
-<sub>회계·컨설팅</sub>
-
-- `2026-03` [KPMG AI Quarterly Pulse Survey](docs/posts/2026-kpmg-ai-quarterly-pulse-survey.html)
-- 🗂 **종합 정리:** [KPMG 기업 AI 조사 (2025~2026)](docs/posts/2025-2026-kpmg-ai-research.html)
 
 
 ### Deloitte
