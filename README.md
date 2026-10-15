@@ -13,10 +13,10 @@
 | | 계층 | 무엇을 담는가 | 편수 |
 | --- | --- | --- | --- |
 | 🔵 | **통합 전망** | 여러 기관의 수치를 나란히 놓고 비교 | 1 |
-| 🟢 | **기관 종합** | 한 기관이 2025~2026년에 낸 보고서를 한 흐름으로 | 8 |
-| 🟠 | **개별 보고서** | 보고서 한 편씩. 원문 링크와 조사 방법, 한계까지 | 23 |
+| 🟢 | **기관 종합** | 한 기관이 2025~2026년에 낸 보고서를 한 흐름으로 | 9 |
+| 🟠 | **개별 보고서** | 보고서 한 편씩. 원문 링크와 조사 방법, 한계까지 | 24 |
 
-목록은 **원문 발행일 최신순**으로 정렬합니다. **매월 1일과 15일에 새 보고서를 검색해 자동으로 추가**하고 기존 페이지를 갱신합니다. 마지막 갱신은 2026-10-01입니다.
+목록은 **원문 발행일 최신순**으로 정렬합니다. **매월 1일과 15일에 새 보고서를 검색해 자동으로 추가**하고 기존 페이지를 갱신합니다. 마지막 갱신은 2026-10-15입니다.
 
 ---
 
@@ -24,13 +24,22 @@
 
 전체 지형을 한 장에 담았습니다.
 
-- `2026-09` [기업 AI 도입 현황 비교 (2025~2026)](docs/posts/2025-2026-enterprise-ai-adoption-research.html) · 기관 13곳 비교
+- `2026-10` [기업 AI 도입 현황 비교 (2025~2026)](docs/posts/2025-2026-enterprise-ai-adoption-research.html) · 기관 13곳 비교
 
 ---
 
 ## 🟢 기관 종합 · 🟠 개별 보고서
 
 기관별로 묶었고, 최근에 보고서를 낸 기관이 위에 옵니다. 보고서가 둘 이상인 기관에는 종합 정리가 함께 있습니다.
+
+### Wharton Human-AI Research & GBK
+
+<sub>대학 · 컨설팅</sub>
+
+- `2026-10` [Wharton–GBK The Adaptive Advantage (2026)](docs/posts/2026-10-wharton-gbk-adaptive-advantage.html)
+- `2025-10` [Wharton–GBK AI Adoption Report 2025](docs/posts/2025-10-wharton-gbk-ai-adoption-report.html)
+- 🗂 **종합 정리:** [Wharton–GBK 기업 AI 조사 (2025~2026)](docs/posts/2025-2026-wharton-gbk-ai-research.html)
+
 
 ### KPMG
 
@@ -130,13 +139,6 @@
 <sub>벤처캐피털</sub>
 
 - `2025-12` [Menlo Ventures State of Generative AI 2025](docs/posts/2025-12-menlo-ventures-state-of-genai.html)
-
-
-### Wharton Human-AI Research & GBK
-
-<sub>대학 · 컨설팅</sub>
-
-- `2025-10` [Wharton–GBK AI Adoption Report 2025](docs/posts/2025-10-wharton-gbk-ai-adoption-report.html)
 
 
 ### MIT Media Lab · Project NANDA
